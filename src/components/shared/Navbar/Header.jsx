@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../../../assets/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
-import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -60,17 +59,20 @@ export default function Header() {
         <div>
           <ul className="hidden lg:flex gap-x-10">
             {menuItems.map((mi, i) => (
-              <li className="group relative text-xl font-semibold" key={i}>
+              <li className="cursor-pointer group relative text-xl font-semibold" key={i}>
                 {mi.name}
                 {mi.child && (
                   <ul className="absolute min-w-[400px] top-6 hidden group-hover:block shadow-xl rounded-xl bg-white p-5">
                     {mi.child.map((mic, i) => (
-                      <li className="my-2.5 font-normal" key={i}>
+                      <li className="font-normal hover:bg-blue-500 hover:text-white w-fit p-1" key={i}>
                         {mic.name}
                       </li>
                     ))}
                   </ul>
                 )}
+                {
+                  mi.child && <div className="h-2.5 w-2.5 bg-blue-500 rounded-full absolute -top-0 -right-1"></div>
+                }
               </li>
             ))}
           </ul>
@@ -90,22 +92,28 @@ export default function Header() {
       </div>
       {/* tablet navbar */}
       {open === true && (
-        <div className="absolute top-15 min-w-full bg-white shadow-xl rounded-xl p-5 lg:hidden">
+        <div className="z-50 absolute top-15 min-w-full bg-white shadow-xl rounded-xl p-5 lg:hidden">
           <ul className="flex flex-col gap-5 items-end">
             {menuItems.map((mi) => (
-              <li className="text-xl border-b-4 border-[#4175FC]">
-                <div className="flex justify-end" onClick={()=> setOpenDropdown(!openDropdown)}>
+              <li className="relative cursor-pointer text-xl border-b-2 md:border-b-4 border-transparent hover:border-[#4175FC] duration-300 ease-linear">
+                <div
+                  className="flex justify-end"
+                  onClick={() => setOpenDropdown(!openDropdown)}
+                >
                   <p>{mi.name}</p>
                 </div>
                 {mi.child && openDropdown && (
-                  <ul className="flex flex-col items-end mr-5">
+                  <ul className="flex flex-col items-end mr-5 mb-5">
                     {mi.child.map((mic, i) => (
-                      <li className="my-2.5" key={i}>
+                      <li className=" hover:bg-blue-500 hover:text-white p-1.5 duration-300 ease-linear" key={i}>
                         {mic.name}
                       </li>
                     ))}
                   </ul>
                 )}
+                {
+                  mi.child && <div className="h-2.5 w-2.5 bg-blue-500 rounded-full absolute -top-0 -right-1"></div>
+                }
               </li>
             ))}
           </ul>

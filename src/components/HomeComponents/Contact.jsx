@@ -10,7 +10,7 @@ export default function Contact() {
           Connect with Us
           </h2>
           <p className="lg:text-xl my-5">
-            Let's Discuss Your Digital Marketing Needs
+            Let's Discuss Your Digital Services Need
           </p>
         </div>
         <Input className="w-full" label="Enter Name"></Input>
