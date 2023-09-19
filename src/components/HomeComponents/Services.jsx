@@ -35,18 +35,16 @@ export default function Services() {
     },
   ];
   return (
-    <div>
-      <div className="flex gap-5">
-        <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
-          Services
-        </h2>
-        <p className="lg:text-xl">
-          Take Your Business to the next Level. <br />
-          Unleashing Your Potential. Empowering You to Break Boundaries and Soar
-          in Business Success.
-        </p>
-      </div>
-      <div className="grid lg:grid-cols-2 gap-8 mt-16">
+    <div className="">
+      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
+        Services
+      </h2>
+      <p className="lg:text-xl mt-5">
+        Take Your Business to the next Level. <br />
+        Unleashing Your Potential. Empowering You to Break Boundaries and Soar
+        in Business Success.
+      </p>
+      <div className="grid lg:grid-cols-2 gap-8 mt-10">
         {services.map((s, i) => (
           <div
             key={i}

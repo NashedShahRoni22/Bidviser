@@ -32,16 +32,6 @@ export default function Company() {
   ];
   return (
     <div className="py-20">
-      {/* <div className="flex gap-5 mb-10">
-        <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold">
-          Our Clients
-        </h2>
-        <p className="lg:text-xl">
-          Through fusion of creative strategy and data-driven insights, we help
-          brands unlock their potential, creating effective digital campaigns
-          that expand reach and boost customer engagement.
-        </p>
-      </div> */}
       <Marquee speed={100} pauseOnHover>
         {images.map((img, i) => (
           <img

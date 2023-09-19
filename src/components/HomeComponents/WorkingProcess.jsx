@@ -6,6 +6,9 @@ import {
 } from "@material-tailwind/react";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { AiFillMinusCircle } from "react-icons/ai";
+import image1 from "../../assets/company/5.png";
+import image2 from "../../assets/company/8.png";
+import image3 from "../../assets/company/13.png";
 
 const CUSTOM_ANIMATION = {
   mount: { scale: 1 },
@@ -50,6 +53,23 @@ export default function WorkingProcess() {
   ];
   return (
     <div className="py-20">
+      <div className="mb-10 lg:flex">
+        <div className="lg:w-1/2 ">
+          <h2 className="text-[#4175FC] text-xl md:text-3xl lg:text-5xl font-semibold">
+            We Wroks With
+          </h2>
+          <p className="lg:text-xl mt-5">
+            Through fusion of creative strategy and data-driven insights, we
+            help brands unlock their potential, creating effective digital
+            campaigns that expand reach and boost customer engagement.
+          </p>
+        </div>
+        <div className="lg:w-1/2 grid grid-cols-2 md:grid-cols-3 place-items-center">
+          <img className="h-[150px] md:h-[250px]" src={image1} alt="" />
+          <img className="h-[150px] md:h-[250px]" src={image2} alt="" />
+          <img className="h-[150px] md:h-[250px]" src={image3} alt="" />
+        </div>
+      </div>
       <div>
         <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
           Our Working Process
@@ -59,22 +79,26 @@ export default function WorkingProcess() {
           strategies, including SEO, content marketing, social media marketing,
           email campaigns, PPC advertising, and data analytics.
         </p>
+        {processes.map((p, i) => (
+          <Accordion
+            open={open === i}
+            key={i}
+            className="shadow-xl rounded-xl p-5 my-10"
+          >
+            <AccordionHeader onClick={() => handleOpen(i)}>
+              <div className="w-full flex justify-between text-black">
+                {p.name}
+                {open === i ? (
+                  <AiFillMinusCircle className="text-3xl" />
+                ) : (
+                  <BsFillPlusCircleFill className="text-3xl" />
+                )}
+              </div>
+            </AccordionHeader>
+            <AccordionBody>{p.details}</AccordionBody>
+          </Accordion>
+        ))}
       </div>
-      {processes.map((p, i) => (
-        <Accordion
-          open={open === i}
-          key={i}
-          className="shadow-xl rounded-xl p-5 my-10"
-        >
-          <AccordionHeader onClick={() => handleOpen(i)}>
-            <div className="w-full flex justify-between text-black">
-              {p.name}
-              {open === i ? <AiFillMinusCircle className="text-3xl" /> : <BsFillPlusCircleFill className="text-3xl" />}
-            </div>
-          </AccordionHeader>
-          <AccordionBody>{p.details}</AccordionBody>
-        </Accordion>
-      ))}
     </div>
   );
 }
