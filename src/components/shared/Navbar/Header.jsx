@@ -5,7 +5,10 @@ import { MdClose } from "react-icons/md";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState({
+    status: false,
+    index: "",
+  });
   const menuItems = [
     {
       name: "Home",
@@ -50,6 +53,12 @@ export default function Header() {
       link: "",
     },
   ];
+  const handleDropdown = (id) => {
+    setOpenDropdown({
+      status: !openDropdown.status,
+      index: id,
+    });
+  };
   return (
     <nav className="m-5 md:container md:mx-auto relative">
       <div className="flex items-center justify-between">
@@ -57,22 +66,29 @@ export default function Header() {
           <img src={logo} alt="" className="h-[50px] w-[150px]" />
         </div>
         <div>
+          {/* desktop navbar */}
           <ul className="hidden lg:flex gap-x-10">
             {menuItems.map((mi, i) => (
-              <li className="cursor-pointer group relative text-xl font-semibold" key={i}>
+              <li
+                className="cursor-pointer group relative text-xl font-semibold"
+                key={i}
+              >
                 {mi.name}
                 {mi.child && (
                   <ul className="absolute min-w-[400px] top-6 hidden group-hover:block shadow-xl rounded-xl bg-white p-5">
                     {mi.child.map((mic, i) => (
-                      <li className="font-normal hover:bg-blue-500 hover:text-white w-fit p-1" key={i}>
+                      <li
+                        className="font-normal hover:bg-blue-500 hover:text-white w-fit p-1"
+                        key={i}
+                      >
                         {mic.name}
                       </li>
                     ))}
                   </ul>
                 )}
-                {
-                  mi.child && <div className="h-2.5 w-2.5 bg-blue-500 rounded-full absolute -top-0 -right-1"></div>
-                }
+                {mi.child && (
+                  <div className="h-2.5 w-2.5 bg-blue-500 rounded-full absolute -top-0 -right-1"></div>
+                )}
               </li>
             ))}
           </ul>
@@ -94,26 +110,36 @@ export default function Header() {
       {open === true && (
         <div className="z-50 absolute top-15 min-w-full bg-white shadow-xl rounded-xl p-5 lg:hidden">
           <ul className="flex flex-col gap-5 items-end">
-            {menuItems.map((mi) => (
-              <li className="relative cursor-pointer text-xl border-b-2 md:border-b-4 border-transparent hover:border-[#4175FC] duration-300 ease-linear">
+            {menuItems.map((mi, i) => (
+              <li
+                key={i}
+                className="relative cursor-pointer text-xl border-b-2 md:border-b-4 border-transparent hover:border-[#4175FC] duration-300 ease-linear"
+              >
                 <div
                   className="flex justify-end"
-                  onClick={() => setOpenDropdown(!openDropdown)}
+                  onClick={() => handleDropdown(i)}
                 >
                   <p>{mi.name}</p>
                 </div>
-                {mi.child && openDropdown && (
-                  <ul className="flex flex-col items-end mr-5 mb-5">
-                    {mi.child.map((mic, i) => (
-                      <li className=" hover:bg-blue-500 hover:text-white p-1.5 duration-300 ease-linear" key={i}>
-                        {mic.name}
-                      </li>
-                    ))}
-                  </ul>
+                {mi.child && (
+                  <>
+                    {openDropdown.status && openDropdown.index === i && (
+                      <ul className="flex flex-col items-end mr-5 mb-5">
+                        {mi.child.map((mic, i) => (
+                          <li
+                            className=" hover:bg-blue-500 hover:text-white p-1.5 duration-300 ease-linear"
+                            key={i}
+                          >
+                            {mic.name}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </>
                 )}
-                {
-                  mi.child && <div className="h-2.5 w-2.5 bg-blue-500 rounded-full absolute -top-0 -right-1"></div>
-                }
+                {mi.child && (
+                  <div className="h-2.5 w-2.5 bg-blue-500 rounded-full absolute -top-0 -right-1"></div>
+                )}
               </li>
             ))}
           </ul>

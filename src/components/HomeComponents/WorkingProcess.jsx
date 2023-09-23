@@ -53,8 +53,8 @@ export default function WorkingProcess() {
   ];
   return (
     <div className="py-20">
-      <div className="mb-10 lg:flex">
-        <div className="lg:w-1/2 ">
+      <div className="mb-10 lg:flex gap-5 py-5">
+        <div className="lg:w-1/2 py-5">
           <h2 className="text-[#4175FC] text-xl md:text-3xl lg:text-5xl font-semibold">
             We Wroks With
           </h2>
@@ -64,7 +64,7 @@ export default function WorkingProcess() {
             campaigns that expand reach and boost customer engagement.
           </p>
         </div>
-        <div className="lg:w-1/2 grid grid-cols-2 md:grid-cols-3 place-items-center">
+        <div className="lg:w-1/2 py-5 grid grid-cols-3 place-items-center">
           <img className="h-[150px] md:h-[250px]" src={image1} alt="" />
           <img className="h-[150px] md:h-[250px]" src={image2} alt="" />
           <img className="h-[150px] md:h-[250px]" src={image3} alt="" />
