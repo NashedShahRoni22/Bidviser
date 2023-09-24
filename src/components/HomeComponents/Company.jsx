@@ -38,7 +38,7 @@ export default function Company() {
             key={i}
             src={img}
             alt=""
-            className="cursor-pointer h-[48px] md:h-[64px] lg:h-[96px] w-fit mx-5 company-img"
+            className="cursor-pointer h-[48px] md:h-[64px] lg:h-[96px] mx-5 company-img"
           />
         ))}
       </Marquee>

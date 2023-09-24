@@ -16,7 +16,7 @@ export default function Contact() {
         <Input className="w-full" label="Enter Name"></Input>
         <Input className="w-full" label="Enter Email"></Input>
         <Textarea className="w-full" label="Enter Messaage"></Textarea>
-        <Button>Send Message</Button>
+        <Button className="hover:bg-[#4175FC] duration-300 ease-linear">Send Message</Button>
       </form>
       <div className="hidden md:w-1/2 md:flex justify-end">
         <img src={image} alt="" className="h-[400px]" />

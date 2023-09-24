@@ -49,7 +49,7 @@ export default function Services() {
           <div
             key={i}
             className={`${
-              i % 2 === 0 ? "bg-black/90" : "bg-white"
+              i % 2 === 0 ? "bg-[#4175FC]" : "bg-white"
             } p-10 flex items-center justify-between rounded-xl shadow-xl hover:shadow-none duration-300`}
           >
             <div className="flex flex-col h-full justify-between">

@@ -13,19 +13,31 @@ export default function Bottombar() {
         </ul>
         <ul className="flex gap-3">
           <li>
-            <BsFacebook className="text-xl md:text-2xl lg:text-3xl" />
+            <a href="https://www.facebook.com/BidViser" target="_blank">
+              <BsFacebook className="text-xl md:text-2xl lg:text-3xl" />
+            </a>
           </li>
           <li>
-            <BsLinkedin className="text-xl md:text-2xl lg:text-3xl" />
+            <a
+              href="https://twitter.com/i/flow/login?redirect_after_login=%2FViserBid"
+              target="_blank"
+            >
+              <BsLinkedin className="text-xl md:text-2xl lg:text-3xl" />
+            </a>
           </li>
           <li>
-            <BsTwitter className="text-xl md:text-2xl lg:text-3xl" />
+            <a
+              href="https://twitter.com/i/flow/login?redirect_after_login=%2FViserBid"
+              target="_blank"
+            >
+              <BsTwitter className="text-xl md:text-2xl lg:text-3xl" />
+            </a>
           </li>
         </ul>
       </div>
       <div className="flex flex-col items-center md:flex-row md:justify-between gap-5 mt-10">
         <div className="text-center md:text-left md:text-lg">
-          <p>Contact us:</p>
+          <p>Our Contact</p>
           <p>Email: contact@bidviser.com</p>
           <p>
             Address: House #29, Road #7, Block #H, South Banasree, Dhaka 1219,
