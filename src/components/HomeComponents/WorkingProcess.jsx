@@ -84,56 +84,54 @@ export default function WorkingProcess() {
     },
   ];
   return (
-    <div className="py-20">
-      <div className="py-5">
-        <div className="my-5">
-          <h2 className="text-[#4175FC] text-xl md:text-3xl lg:text-5xl font-semibold">
-            We Wroks With
-          </h2>
-          <p className="lg:text-xl mt-5">
-            Through fusion of creative strategy and data-driven insights, we
-            help brands unlock their potential, creating effective digital
-            campaigns that expand reach and boost customer engagement.
-          </p>
-        </div>
-        <Tabs value={activeTab} className="my-10 min-h-[60vh]">
-          <TabsHeader
-            className="bg-transparent"
-            indicatorProps={{
-              className:
-                "bg-transparent border-b-2 border-[#4175FC] shadow-none rounded-none",
-            }}
-          >
-            {data.map(({ label, value }) => (
-              <Tab
-                key={value}
-                value={value}
-                onClick={() => setActiveTab(value)}
-                className={
-                  activeTab === value
-                    ? "text-gray-900 font-semibold"
-                    : "font-semibold"
-                }
-              >
-                {label}
-              </Tab>
-            ))}
-          </TabsHeader>
-          <TabsBody>
-            {data.map(({ value, desc }) => (
-              <TabPanel
-                key={value}
-                value={value}
-                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
-              >
-                {desc.map((d) => (
-                  <img src={d} alt="" className="h-[100px] md:h-[150px]" />
-                ))}
-              </TabPanel>
-            ))}
-          </TabsBody>
-        </Tabs>
+    <div className="py-10">
+      <div className="mt-10">
+        <h2 className="text-[#4175FC] text-xl md:text-3xl lg:text-5xl font-semibold">
+          We Wroks With
+        </h2>
+        <p className="lg:text-xl mt-5">
+          Through fusion of creative strategy and data-driven insights, we help
+          brands unlock their potential, creating effective digital campaigns
+          that expand reach and boost customer engagement.
+        </p>
       </div>
+      <Tabs value={activeTab} className="mt-10 min-h-[60vh]">
+        <TabsHeader
+          className="bg-transparent"
+          indicatorProps={{
+            className:
+              "bg-transparent border-b-2 border-[#4175FC] shadow-none rounded-none",
+          }}
+        >
+          {data.map(({ label, value }) => (
+            <Tab
+              key={value}
+              value={value}
+              onClick={() => setActiveTab(value)}
+              className={
+                activeTab === value
+                  ? "text-gray-900 font-semibold"
+                  : "font-semibold"
+              }
+            >
+              {label}
+            </Tab>
+          ))}
+        </TabsHeader>
+        <TabsBody>
+          {data.map(({ value, desc }) => (
+            <TabPanel
+              key={value}
+              value={value}
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+            >
+              {desc.map((d) => (
+                <img src={d} alt="" className="h-[100px] md:h-[150px]" />
+              ))}
+            </TabPanel>
+          ))}
+        </TabsBody>
+      </Tabs>
       <div className="mt-10">
         <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
           Our Working Process
