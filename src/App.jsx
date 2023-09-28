@@ -1,15 +1,28 @@
-import Bottombar from "./components/shared/Bottombar/Bottombar";
-import Header from "./components/shared/Navbar/Header";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
-
+import Main from "./layout/Main";
+import DigitalMarketting from "./pages/Services/DigitalMarketting";
 
 function App() {
-
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/digital_marketting",
+          element: <DigitalMarketting />,
+        },
+      ],
+    },
+  ]);
   return (
     <main>
-        <Header/>
-        <Home/>
-        <Bottombar/>
+      <RouterProvider router={router} />
     </main>
   );
 }

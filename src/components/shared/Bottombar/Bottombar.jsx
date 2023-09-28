@@ -44,13 +44,13 @@ export default function Bottombar() {
             Bangladesh.
           </p>
         </div>
-        <div className="flex rounded-xl p-10 bg-[#292A32]">
+        <div className="flex rounded-xl p-2 bg-[#292A32]">
           <input
-            className="py-2 px-2 border focus:outline-none text-black"
+            className="py-2 px-2 border rounded-l-xl focus:outline-none text-black"
             type="text"
             placeholder="Email"
           />
-          <button className="py-2 px-2 border">Subscribe</button>
+          <button className="py-2 px-2 border rounded-r-xl">Subscribe</button>
         </div>
       </div>
       <p className="mt-10 text-center">© 2023 BidViser. All Rights Reserved.</p>

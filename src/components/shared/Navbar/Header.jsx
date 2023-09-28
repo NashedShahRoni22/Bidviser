@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../../assets/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Header() {
         },
         {
           name: "Digital Marketting",
-          link: "",
+          link: "/digital_marketting",
         },
         {
           name: "Digital Advertising",
@@ -75,13 +76,13 @@ export default function Header() {
               >
                 {mi.name}
                 {mi.child && (
-                  <ul className="absolute min-w-[400px] top-6 hidden group-hover:block shadow-xl rounded-xl bg-white p-5">
+                  <ul className="z-50 absolute min-w-[400px] top-6 hidden group-hover:block shadow-xl rounded-xl bg-white p-5">
                     {mi.child.map((mic, i) => (
                       <li
                         className="font-normal hover:bg-blue-500 hover:text-white w-fit p-1"
                         key={i}
                       >
-                        {mic.name}
+                        <Link to={mic.link}>{mic.name}</Link>
                       </li>
                     ))}
                   </ul>
@@ -130,7 +131,7 @@ export default function Header() {
                             className=" hover:bg-blue-500 hover:text-white p-1.5 duration-300 ease-linear"
                             key={i}
                           >
-                            {mic.name}
+                            <Link to={mic.link}>{mic.name}</Link>
                           </li>
                         ))}
                       </ul>

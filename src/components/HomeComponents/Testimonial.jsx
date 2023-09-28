@@ -11,7 +11,8 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import { AiFillStar, AiOutlineComment } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
+import { FaQuoteLeft } from "react-icons/fa";
 
 export default function Testimonial() {
   const data = [
@@ -80,10 +81,10 @@ export default function Testimonial() {
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper p-5 md:p-10"
         >
-          {data.map((d) => (
-            <SwiperSlide>
-              <div className="p-4 sm:p-6 md:p-8 lg:p-10 bg-[#292A32] text-white rounded-xl shadow-xl border-2 border-[#4175FC]">
-                <AiOutlineComment className="text-4xl sm:text-5xl lg:text-6xl text-[#4175FC] mb-2 sm:mb-4" />
+          {data.map((d,i) => (
+            <SwiperSlide key={i}>
+              <div className="relative p-4 sm:p-6 md:p-8 lg:p-10 bg-[#292A32] text-white rounded-xl shadow-xl border-2 border-[#4175FC]">
+                <FaQuoteLeft className="text-4xl sm:text-5xl lg:text-6xl text-[#4175FC] mb-2 sm:mb-4" />
                 <p className="text-base sm:text-lg lg:text-xl my-2 sm:my-4">
                   {d.desc}
                 </p>

@@ -125,8 +125,8 @@ export default function WorkingProcess() {
               value={value}
               className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
             >
-              {desc.map((d) => (
-                <img src={d} alt="" className="h-[100px] md:h-[150px]" />
+              {desc.map((d,i) => (
+                <img key={i} src={d} alt="" className="h-[100px] md:h-[150px]" />
               ))}
             </TabPanel>
           ))}

@@ -5,6 +5,7 @@ import Services from '../../components/HomeComponents/Services'
 import WorkingProcess from '../../components/HomeComponents/WorkingProcess'
 import Contact from '../../components/HomeComponents/Contact'
 import Testimonial from '../../components/HomeComponents/Testimonial'
+import FacebookMsg from '../../components/shared/FacebookMsg/FacebookMsg'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <WorkingProcess/>
         <Testimonial/>
         <Contact/>
+        <FacebookMsg/>
     </main>
   )
 }
