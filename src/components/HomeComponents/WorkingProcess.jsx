@@ -17,15 +17,12 @@ import img1 from "../../assets/company/1.png";
 import img2 from "../../assets/company/2.png";
 import img3 from "../../assets/company/3.png";
 import img4 from "../../assets/company/4.png";
-import img5 from "../../assets/company/5.png";
 import img6 from "../../assets/company/6.png";
 import img7 from "../../assets/company/7.png";
-import img8 from "../../assets/company/8.png";
 import img9 from "../../assets/company/9.png";
 import img10 from "../../assets/company/10.png";
 import img11 from "../../assets/company/11.png";
 import img12 from "../../assets/company/12.png";
-import img13 from "../../assets/company/13.png";
 
 import image1 from "../../assets/company/5.png";
 import image2 from "../../assets/company/8.png";
@@ -45,26 +42,12 @@ const data = [
   {
     label: "Clients",
     value: "Clients",
-    desc: [
-      img1,
-      img2,
-      img3,
-      img4,
-      img5,
-      img6,
-      img7,
-      img8,
-      img9,
-      img10,
-      img11,
-      img12,
-      img13,
-    ],
+    desc: [img6, img7, img9, img10, img11, img12, img1, img2, img3, img4],
   },
 ];
 
 export default function WorkingProcess() {
-  const [activeTab, setActiveTab] = React.useState("Clients");
+  const [activeTab, setActiveTab] = React.useState("Government");
   const [open, setOpen] = React.useState(0);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
@@ -113,9 +96,9 @@ export default function WorkingProcess() {
             campaigns that expand reach and boost customer engagement.
           </p>
         </div>
-        <Tabs value={activeTab} className="my-5 min-h-[60vh]">
+        <Tabs value={activeTab} className="my-10 min-h-[60vh]">
           <TabsHeader
-            className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
+            className="bg-transparent"
             indicatorProps={{
               className:
                 "bg-transparent border-b-2 border-[#4175FC] shadow-none rounded-none",
@@ -126,7 +109,11 @@ export default function WorkingProcess() {
                 key={value}
                 value={value}
                 onClick={() => setActiveTab(value)}
-                className={activeTab === value ? "text-gray-900" : ""}
+                className={
+                  activeTab === value
+                    ? "text-gray-900 font-semibold"
+                    : "font-semibold"
+                }
               >
                 {label}
               </Tab>
@@ -146,11 +133,6 @@ export default function WorkingProcess() {
             ))}
           </TabsBody>
         </Tabs>
-        {/* <div className="lg:w-1/2 py-5 grid grid-cols-3 place-items-center">
-          <img className="h-[150px] md:h-[200px]" src={image1} alt="" />
-          <img className="h-[150px] md:h-[200px]" src={image2} alt="" />
-          <img className="h-[150px] md:h-[200px]" src={image3} alt="" />
-        </div> */}
       </div>
       <div className="mt-10">
         <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
