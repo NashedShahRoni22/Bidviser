@@ -114,7 +114,7 @@ export default function Header() {
             {menuItems.map((mi, i) => (
               <li
                 key={i}
-                className="relative cursor-pointer text-xl border-b-2 md:border-b-4 border-transparent hover:border-[#4175FC] duration-300 ease-linear"
+                className="relative cursor-pointer text-xl border-b-2 md:border-b-4 border-transparent md:hover:border-[#4175FC] duration-300 ease-linear"
               >
                 <div
                   className="flex justify-end"

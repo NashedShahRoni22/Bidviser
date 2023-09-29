@@ -42,7 +42,7 @@ const data = [
   {
     label: "Clients",
     value: "Clients",
-    desc: [img6, img7, img9, img10, img11, img12, img1, img2, img3, img4],
+    desc: [img6, img7, img9, img10, img11, img12, img3, img4],
   },
 ];
 
@@ -85,7 +85,7 @@ export default function WorkingProcess() {
   ];
   return (
     <div className="py-10">
-      <div className="mt-10">
+      <div className="mt-10 shadow-xl p-5 md:p-10 rounded-xl">
         <h2 className="text-[#4175FC] text-xl md:text-3xl lg:text-5xl font-semibold">
           We Wroks With
         </h2>
@@ -94,8 +94,7 @@ export default function WorkingProcess() {
           brands unlock their potential, creating effective digital campaigns
           that expand reach and boost customer engagement.
         </p>
-      </div>
-      <Tabs value={activeTab} className="mt-10 min-h-[60vh]">
+        <Tabs value={activeTab} className="mt-10 min-h-[60vh]">
         <TabsHeader
           className="bg-transparent"
           indicatorProps={{
@@ -123,16 +122,18 @@ export default function WorkingProcess() {
             <TabPanel
               key={value}
               value={value}
-              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center"
             >
               {desc.map((d,i) => (
-                <img key={i} src={d} alt="" className="h-[100px] md:h-[150px]" />
+                <img key={i} src={d} alt="" className="h-[150px] md:h-[150px]" />
               ))}
             </TabPanel>
           ))}
         </TabsBody>
       </Tabs>
-      <div className="mt-10">
+      </div>
+      
+      <div className="mt-10 p-5 md:p-10">
         <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
           Our Working Process
         </h2>

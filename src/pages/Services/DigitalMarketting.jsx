@@ -1,13 +1,14 @@
 import React from "react";
 import DigitalMarkettingAnim from "../../assets/anim/DigitalMarketting.json";
+import WorkWithUs from "../../assets/anim/WorkWithUs.json";
 import Lottie from "lottie-react";
 import { TbBuildingCarousel } from "react-icons/tb";
-import { GrTestDesktop } from "react-icons/gr";
-import { AiOutlineBlock } from "react-icons/ai";
+import { AiOutlineBlock, AiOutlineOrderedList } from "react-icons/ai";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
+  Button,
 } from "@material-tailwind/react";
 
 export default function DigitalMarketting() {
@@ -83,33 +84,9 @@ export default function DigitalMarketting() {
           />
         </div>
       </div>
-      {/* <div className="mt-5">
-        <h1 className="text-xl font-semibold">
-          Boost ROI with Expert Digital Advertising Services - Maximize Reach
-          for Optimal Results!
-        </h1>
-        <p className="text-justify my-5">
-          Unlock the power of your business with our expert Digital Advertising
-          Services. In today’s fast-paced digital landscape, staying ahead of
-          the competition requires strategic and targeted campaigns that drive
-          results. At our agency, we specialize in crafting bespoke digital
-          marketing solutions tailored to your unique needs, ensuring maximum
-          reach and optimal ROI. With our team of experienced professionals, we
-          excel in PPC Management, leveraging data-driven insights to deliver
-          impactful ad campaigns that convert leads into loyal customers. Our
-          comprehensive approach encompasses keyword research, audience
-          segmentation, and compelling ad creatives to engage your target
-          audience and boost brand visibility. Whether you’re a startup seeking
-          rapid growth or an established brand looking to enhance your online
-          presence, our Digital Advertising Services have got you covered.
-          Elevate your business to new heights with our proven expertise and
-          measurable results. Take the first step towards success – contact us
-          today for a free consultation and unlock the full potential of your
-          digital marketing endeavors!
-        </p>
-      </div> */}
-      <div className="my-5 md:my-10 py-5 md:py-10">
-        <h1 className="text-center text-[40px] lg:text-[60px] font-semibold">
+      <div className="my-5 md:my-10 p-5 md:p-10 rounded-xl bg-black/90 text-white">
+        <p className="text-center font-semibold lg:text-[20px]">Our Approach</p>
+        <h1 className="text-center text-[40px] lg:text-[60px] mt-5 font-semibold">
           Insight. Creativity. Technology.
         </h1>
         <p className="text-center lg:text-[20px] mt-5 mb-10">
@@ -118,25 +95,25 @@ export default function DigitalMarketting() {
           Cutting-Edge Technology for Performance Beyond Benchmark.
         </p>
         <div className="grid gap-5 md:grid-cols-3">
-          <div className="flex flex-col items-center gap-2">
-            <AiOutlineBlock className="text-3xl md:text-5xl" />
-            <h5>Concept</h5>
+          <div className="flex border-2 border-[#4175FC] flex-col items-center rounded-xl gap-2 bg-[#292A32] p-4">
+            <AiOutlineBlock className="text-3xl md:text-5xl text-[#4175FC]" />
+            <h5 className="text-xl font-semibold">Concept</h5>
             <p className="text-center">
               Demystifying Essential Foundations - Unleashing the Power of
               Creative Concepts in Digital Marketing Services.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-2">
-            <TbBuildingCarousel className="text-3xl md:text-5xl" />
-            <h5>Build</h5>
+          <div className="flex border-2 border-[#4175FC] flex-col items-center rounded-xl gap-2 bg-[#292A32] p-4">
+            <TbBuildingCarousel className="text-3xl md:text-5xl text-[#4175FC]" />
+            <h5 className="text-xl font-semibold">Build</h5>
             <p className="text-center">
               The Crucial Verdict - Evaluating Outcomes and Proving
               Effectiveness From Our Comprehensive Digital Approach.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-2">
-            <GrTestDesktop className="text-3xl md:text-5xl" />
-            <h5>Test</h5>
+          <div className="flex border-2 border-[#4175FC] flex-col items-center rounded-xl gap-2 bg-[#292A32] p-4">
+            <AiOutlineOrderedList className="text-3xl md:text-5xl text-[#4175FC]" />
+            <h5 className="text-xl font-semibold">Test</h5>
             <p className="text-center">
               Market Analysis: Deploying and Refining Strategies for Optimal
               Outcome.
@@ -144,14 +121,13 @@ export default function DigitalMarketting() {
           </div>
         </div>
       </div>
-
       <div className="lg:flex gap-10 my-5 md:my-10 py-5 md:py-10">
         <div className="lg:w-1/2">
           {/* Productive Progressive */}
-          <h1 className="text-[40px] lg:text-[60px] font-semibold">
+          <p className="text-xl md:text-3xl font-semibold">
             Top 10 Reasons to Choose Digital Marketing Services for Your Brand
-          </h1>
-          <p className="text-justify lg:text-[20px] my-5">
+          </p>
+          <p className="text-justify md:text-xl my-5">
             Thrive or Survive : The Critical Role of Digital Marketing Services
             in Today’s Business Landscape” is a stark reality that modern
             businesses face. As traditional marketing methods fade, it’s only
@@ -166,16 +142,49 @@ export default function DigitalMarketting() {
           </p>
         </div>
         <div className="lg:w-1/2">
-          {accordionData.map((ad,i) => (
+          {accordionData.map((ad, i) => (
             <Accordion key={i} open={open === i}>
               <AccordionHeader onClick={() => handleOpen(i)}>
                 {ad.que}
               </AccordionHeader>
-              <AccordionBody>
-                {ad.desc}
-              </AccordionBody>
+              <AccordionBody>{ad.desc}</AccordionBody>
             </Accordion>
           ))}
+        </div>
+      </div>
+      <div className="my-5 md:my-10 py-5 md:py-10 lg:flex gap-10">
+        <div className="lg:w-2/5">
+          <Lottie
+            animationData={WorkWithUs}
+            loop={true}
+            style={style}
+          />
+        </div>
+        <div className="lg:w-3/5">
+          <p className="text-xl md:text-3xl font-semibold">
+            Boost ROI with Expert Digital Advertising Services - Maximize Reach
+            for Optimal Results!
+          </p>
+          <p className="text-justify md:text-xl my-5">
+            Unlock the power of your business with our expert Digital
+            Advertising Services. In today’s fast-paced digital landscape,
+            staying ahead of the competition requires strategic and targeted
+            campaigns that drive results. At our agency, we specialize in
+            crafting bespoke digital marketing solutions tailored to your unique
+            needs, ensuring maximum reach and optimal ROI. With our team of
+            experienced professionals, we excel in PPC Management, leveraging
+            data-driven insights to deliver impactful ad campaigns that convert
+            leads into loyal customers. Our comprehensive approach encompasses
+            keyword research, audience segmentation, and compelling ad creatives
+            to engage your target audience and boost brand visibility. Whether
+            you’re a startup seeking rapid growth or an established brand
+            looking to enhance your online presence, our Digital Advertising
+            Services have got you covered. Elevate your business to new heights
+            with our proven expertise and measurable results. Take the first
+            step towards success – contact us today for a free consultation and
+            unlock the full potential of your digital marketing endeavors!
+          </p>
+          <Button>Let's Work Togather</Button>
         </div>
       </div>
     </div>
