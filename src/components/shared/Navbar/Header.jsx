@@ -13,7 +13,7 @@ export default function Header() {
   const menuItems = [
     {
       name: "Home",
-      link: "",
+      link: "/",
     },
     {
       name: "Services",
@@ -63,9 +63,9 @@ export default function Header() {
   return (
     <nav className="m-5 md:container md:mx-auto relative">
       <div className="flex items-center justify-between">
-        <div>
+        <Link to={'/'}>
           <img src={logo} alt="" className="h-[50px] w-[150px]" />
-        </div>
+        </Link>
         <div>
           {/* desktop navbar */}
           <ul className="hidden lg:flex gap-x-10">
@@ -74,7 +74,7 @@ export default function Header() {
                 className="cursor-pointer group relative text-xl font-semibold"
                 key={i}
               >
-                {mi.name}
+                <Link to={mi.link}>{mi.name}</Link>
                 {mi.child && (
                   <ul className="z-50 absolute min-w-[400px] top-6 hidden group-hover:block shadow-xl rounded-xl bg-white p-5">
                     {mi.child.map((mic, i) => (
@@ -120,7 +120,7 @@ export default function Header() {
                   className="flex justify-end"
                   onClick={() => handleDropdown(i)}
                 >
-                  <p>{mi.name}</p>
+                  <Link to={mi.link}>{mi.name}</Link>
                 </div>
                 {mi.child && (
                   <>

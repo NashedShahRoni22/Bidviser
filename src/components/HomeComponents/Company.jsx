@@ -42,7 +42,6 @@ export default function Company() {
           />
         ))}
       </Marquee>
-      {/* <p className="font-semibold mt-10 text-end">Our Clients</p> */}
     </div>
   );
 }

@@ -48,22 +48,25 @@ export default function Services() {
         {services.map((s, i) => (
           <div
             key={i}
-            className={`${
-              i % 2 === 0 ? "bg-black/90" : "bg-white"
-            } p-10 flex items-center justify-between rounded-xl shadow-xl hover:shadow-none duration-300`}
+            className="bg-[#292A32] p-10 flex items-center justify-between rounded-xl shadow-xl border-4 border-[#4175FC] hover:scale-105 duration-200 ease-linear"
+            // className={`${
+            //   i % 2 === 0 ? "bg-black/90" : "bg-white"
+            // } p-10 flex items-center justify-between rounded-xl shadow-xl hover:shadow-none duration-300`}
           >
             <div className="flex flex-col h-full justify-between">
               <h5
-                className={`${
-                  i % 2 === 0 ? "text-white" : "text-black"
-                } font-semibold text-xl md:text-3xl`}
+                // className={`${
+                //   i % 2 === 0 ? "text-white" : "text-black"
+                // } font-semibold text-xl md:text-3xl`}
+                className="text-white font-semibold text-xl md:text-3xl"
               >
                 {s.name}
               </h5>
               <button
-                className={`${
-                  i % 2 === 0 ? "text-white" : "text-black"
-                } flex items-center gap-2`}
+                // className={`${
+                //   i % 2 === 0 ? "text-white" : "text-black"
+                // } flex items-center gap-2`}
+                className="text-white flex items-center gap-2"
               >
                 <BsFillArrowUpRightCircleFill className="text-3xl" />
                 <span className="hidden md:block">Learn More</span>
@@ -78,6 +81,52 @@ export default function Services() {
             </div>
           </div>
         ))}
+        <div
+            className="bg-[#4175FC] p-10 flex items-center justify-between rounded-xl shadow-xl border-4 border-[#292A32] hover:scale-105 duration-200 ease-linear"
+          >
+            <div className="flex flex-col h-full justify-between">
+              <h5
+                className="text-white font-semibold text-xl md:text-3xl"
+              >
+                TEST DESIGN
+              </h5>
+              <button
+                className="text-white flex items-center gap-2"
+              >
+                <BsFillArrowUpRightCircleFill className="text-3xl" />
+                <span className="hidden md:block">Learn More</span>
+              </button>
+            </div>
+            <div>
+              <img
+                src={comercialImg}
+                alt=""
+              />
+            </div>
+          </div>
+        <div
+            className="bg-[#4176fcc7] p-10 flex items-center justify-between rounded-xl shadow-xl border-4 border-[#292A32] hover:scale-105 duration-200 ease-linear"
+          >
+            <div className="flex flex-col h-full justify-between">
+              <h5
+                className="text-white font-semibold text-xl md:text-3xl"
+              >
+                TEST DESIGN 2
+              </h5>
+              <button
+                className="text-white flex items-center gap-2"
+              >
+                <BsFillArrowUpRightCircleFill className="text-3xl" />
+                <span className="hidden md:block">Learn More</span>
+              </button>
+            </div>
+            <div>
+              <img
+                src={comercialImg}
+                alt=""
+              />
+            </div>
+          </div>
       </div>
     </div>
   );
