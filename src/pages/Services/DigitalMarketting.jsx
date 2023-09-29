@@ -12,9 +12,14 @@ import {
 } from "@material-tailwind/react";
 
 export default function DigitalMarketting() {
+  //top 10 accordion
   const [open, setOpen] = React.useState(0);
-
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
+  // faq accordion
+  const [openFaq, setFaqOpen] = React.useState(0);
+  const handleFaqOpen = (value) => setFaqOpen(open === value ? 0 : value);
+
   const style = {
     height: 400,
   };
@@ -106,12 +111,46 @@ export default function DigitalMarketting() {
       desc: "Providing data across possibilities and streamlining it into usable detail leading to actions improving Digital Marketing ROI.",
     },
   ];
+  const faqData = [
+    {
+      que: "What are Digital Marketing Services?",
+      ans: "Digital Marketing Services covers all the marketing and strategic efforts a company performs using the internet or electronic devices. It includes tactics such as SEO, social media marketing, email marketing, paid ads, content marketing etc.",
+    },
+    {
+      que: "Can small businesses also benefit from digital marketing?",
+      ans: "Yes, digital marketing can be highly beneficial for businesses of all sizes. It provides them with an opportunity to reach a global audience effectively.",
+    },
+    {
+      que: "Which digital marketing technique is right for my business?",
+      ans: "The ‘right’ method depends upon numerous factors such as your business’s industry, audience, products or services, and goals. On assessing these key elements, a digital marketing strategy can be outlined.",
+    },
+    {
+      que: "How frequently should I have business posts on social media?",
+      ans: "The frequency of posts depends on your audience’s appetite for information and the nature of your business. However, a regular and consistent posting schedule is crucial in developing a powerful social media presence.",
+    },
+    {
+      que: "What are the costs associated with digital marketing?",
+      ans: "Costs vary hugely based on the nature and scale of the specific marketing activities that your business plan entails. Still, digital marketing typically provides a cost-effective solution compared to traditional marketing channels.",
+    },
+    {
+      que: "Can digital marketing help improve my business revenues?",
+      ans: "Definitely, regular and well-structured digital marketing can greatly enhance visibility, brand recognition, and ultimately drive leads and conversion for your business.",
+    },
+    {
+      que: "How long does it take to observe results from digital marketing strategies?",
+      ans: "The timeline differs with strategies. While Paid Ad campaigns may show immediate effects, organic methods such as SEO might take 3-6 months before showing significant results.",
+    },
+    {
+      que: "How do I measure the success/ROI of my digital marketing efforts?",
+      ans: "Key performance indicators (KPIs) like traffic, leads, conversion and customer sentiment are several metrics used to measure digital marketing success. Regular monitoring and adaptive strategies in line with these metrics help to continually improve the reach and impact of your strategy.",
+    },
+  ];
   return (
     <div className="mx-5 md:container md:mx-auto">
       <div className="md:flex gap-10 my-5 md:my-10 py-5 md:py-10">
         <div className="md:w-1/2">
           {/* Productive Progressive */}
-          <h1 className="text-[40px] lg:text-[60px] font-semibold">
+          <h1 className="text-[#0c2c5d] text-[40px] lg:text-[60px] font-semibold">
             Professional Digital Marketing Services
           </h1>
           <p className="text-justify lg:text-[20px] my-5">
@@ -172,9 +211,9 @@ export default function DigitalMarketting() {
       <div className="lg:flex gap-10 my-5 md:my-10 py-5 md:py-10">
         <div className="lg:w-1/2">
           {/* Productive Progressive */}
-          <p className="text-2xl md:text-4xl font-semibold">
+          <h5 className="text-2xl md:text-4xl font-semibold text-[#0c2c5d]">
             Top 10 Reasons to Choose Digital Marketing Services for Your Brand
-          </p>
+          </h5>
           <p className="text-justify md:text-xl my-5">
             Thrive or Survive : The Critical Role of Digital Marketing Services
             in Today’s Business Landscape” is a stark reality that modern
@@ -200,15 +239,15 @@ export default function DigitalMarketting() {
           ))}
         </div>
       </div>
-      <div className="my-5 md:my-10 py-5 md:py-10 lg:flex gap-10">
+      <div className="my-5 md:my-10 p-5 py-5 md:p-10 lg:flex gap-10 shadow">
         <div className="lg:w-2/5">
           <Lottie animationData={WorkWithUs} loop={true} style={style} />
         </div>
         <div className="lg:w-3/5">
-          <p className="text-2xl md:text-4xl font-semibold">
+          <h5 className="text-[#0c2c5d] text-2xl md:text-4xl font-semibold">
             The Compelling Need for Digital Marketing in Modern Business
             Landscape
-          </p>
+          </h5>
           <p className="text-justify md:text-xl my-5">
             Embrace the transformative power of Digital Marketing Services and
             catapult your business into the digital future. Harness robust
@@ -223,13 +262,13 @@ export default function DigitalMarketting() {
             your business begins here! Act now and propel your enterprise
             towards its fast-tracked evolution.
           </p>
-          <Button>Let's Work Togather</Button>
+          <Button className="bg-[#0c2c5d] hover:bg-[#4175FC] duration-300 ease-linear">Let's Work Togather</Button>
         </div>
       </div>
-      <div className="my-5 md:my-10 p-5 py-5 md:p-10 rounded-xl">
-        <p className="text-center text-2xl md:text-4xl font-semibold">
+      <div className="my-5 md:my-10 p-5 py-5 md:p-10">
+        <h5 className="text-[#0c2c5d ]text-center text-2xl md:text-4xl font-semibold">
           11 Most Effective Digital Marketing Services for Boosting Web Traffic
-        </p>
+        </h5>
         <p className="text-center md:text-xl mt-5">
           Don’t miss these top 11 digital marketing strategies boosting web
           traffic. Explore SEO mastery, strategic social media, smart PPC
@@ -242,11 +281,27 @@ export default function DigitalMarketting() {
               key={i}
               className="bg-[#292A32] p-4 rounded-xl border-2 border-[#4175FC] hover:scale-105 duration-200 ease-linear"
             >
-              <p className="text-white text-xl font-semibold">
+              <h5 className="text-white text-xl font-semibold">
                 {i + 1}. {ed.name}
-              </p>
+              </h5>
               <p className="text-white mt-2.5">{ed.desc}</p>
             </div>
+          ))}
+        </div>
+      </div>
+      <div className="my-5 md:my-10 p-5 py-5 md:p-10 rounded-xl shadow">
+        <h5 className="text-[#0c2c5d] text-center text-2xl md:text-4xl font-semibold">F.A.Q.</h5>
+        <p className="text-center md:text-xl mt-5">
+          Frequently Asked Questions (FAQ) About Social Media Marketing Services
+        </p>
+        <div className="mt-10">
+          {faqData.map((ed, i) => (
+            <Accordion open={openFaq === i} key={i}>
+              <AccordionHeader onClick={() => handleFaqOpen(i)}>
+                {ed.que}
+              </AccordionHeader>
+              <AccordionBody>{ed.ans}</AccordionBody>
+            </Accordion>
           ))}
         </div>
       </div>

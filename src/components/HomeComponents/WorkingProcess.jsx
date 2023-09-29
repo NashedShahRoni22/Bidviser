@@ -152,9 +152,9 @@ export default function WorkingProcess() {
               <div className="w-full flex justify-between text-black">
                 {p.name}
                 {open === i ? (
-                  <AiFillMinusCircle className="text-3xl text-[#4175FC]" />
+                  <AiFillMinusCircle className="text-3xl text-[#0c2c5d]" />
                 ) : (
-                  <BsFillPlusCircleFill className="text-3xl text-[#4175FC]" />
+                  <BsFillPlusCircleFill className="text-3xl text-[#0c2c5d]" />
                 )}
               </div>
             </AccordionHeader>

@@ -1,7 +1,11 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Main from "./layout/Main";
 import DigitalMarketting from "./pages/Services/DigitalMarketting";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,7 +26,9 @@ function App() {
   ]);
   return (
     <main>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}>
+        <ScrollToTop />
+      </RouterProvider>
     </main>
   );
 }
