@@ -85,8 +85,8 @@ export default function WorkingProcess() {
   ];
   return (
     <div className="py-10">
-      <div className="mt-10 shadow-xl p-5 md:p-10 rounded-xl">
-        <h2 className="text-[#4175FC] text-xl md:text-3xl lg:text-5xl font-semibold">
+      <div className="mt-10 shadow p-5 md:p-10 rounded-xl">
+        <h2 className="text-[#0c2c5d] text-xl md:text-3xl lg:text-5xl font-semibold">
           We Wroks With
         </h2>
         <p className="lg:text-xl mt-5">
@@ -99,7 +99,7 @@ export default function WorkingProcess() {
           className="bg-transparent"
           indicatorProps={{
             className:
-              "bg-transparent border-b-2 border-[#4175FC] shadow-none rounded-none",
+              "bg-transparent border-b-2 border-[#0c2c5d] shadow-none rounded-none",
           }}
         >
           {data.map(({ label, value }) => (
@@ -134,7 +134,7 @@ export default function WorkingProcess() {
       </div>
       
       <div className="mt-10 p-5 md:p-10">
-        <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
+        <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#0c2c5d]">
           Our Working Process
         </h2>
         <p className="lg:text-xl my-5">
@@ -146,7 +146,7 @@ export default function WorkingProcess() {
           <Accordion
             open={open === i}
             key={i}
-            className="shadow-xl rounded-xl p-5 my-10"
+            className="shadow rounded-xl p-5 my-10"
           >
             <AccordionHeader onClick={() => handleOpen(i)}>
               <div className="w-full flex justify-between text-black">

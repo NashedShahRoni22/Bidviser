@@ -1,10 +1,10 @@
 import React from "react";
-import comercialImg from "../../assets/services/ComercialVideo&Photography.png";
-import digitalMarkettingImg from "../../assets/services/digital_marketting.png";
-import digitalAdvertisingImg from "../../assets/services/digital_advertising.png";
-import seoImg from "../../assets/services/seo.png";
-import socialMediaImg from "../../assets/services/social_media_marketting.png";
-import webImg from "../../assets/services/web_design.png";
+import comercialImg from "../../assets/services/Comercial Video & Photography.svg";
+import digitalMarkettingImg from "../../assets/services/Digital Marketing.svg";
+import digitalAdvertisingImg from "../../assets/services/Digital Advertising.svg";
+import seoImg from "../../assets/services/Search Engine Optimization(SEO).svg";
+import socialMediaImg from "../../assets/services/Social Media Marketing.svg";
+import webImg from "../../assets/services/Web Design & Development.svg";
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 
 export default function Services() {
@@ -36,7 +36,7 @@ export default function Services() {
   ];
   return (
     <div className="">
-      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#4175FC]">
+      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#0c2c5d]">
         Services
       </h2>
       <p className="lg:text-xl mt-5">
@@ -48,7 +48,7 @@ export default function Services() {
         {services.map((s, i) => (
           <div
             key={i}
-            className="bg-white p-10 flex items-center justify-between rounded-xl shadow-xl border-4 border-white hover:border-[#4175FC] hover:scale-105 duration-200 ease-linear"
+            className="bg-gradient-to-tr from-[#e8f6fc] p-10 flex items-center justify-between rounded-xl shadow hover:scale-105 duration-200 ease-linear"
             // className={`${
             //   i % 2 === 0 ? "bg-black/90" : "bg-white"
             // } p-10 flex items-center justify-between rounded-xl shadow-xl hover:shadow-none duration-300`}
@@ -58,7 +58,7 @@ export default function Services() {
                 // className={`${
                 //   i % 2 === 0 ? "text-white" : "text-black"
                 // } font-semibold text-xl md:text-3xl`}
-                className="font-semibold text-xl md:text-3xl"
+                className="font-semibold text-xl md:text-3xl text-[#0c2c5d]"
               >
                 {s.name}
               </h5>
@@ -68,47 +68,19 @@ export default function Services() {
                 // } flex items-center gap-2`}
                 className="flex items-center gap-2"
               >
-                <BsFillArrowUpRightCircleFill className="text-3xl" />
-                <span className="hidden md:block">Learn More</span>
+                <BsFillArrowUpRightCircleFill className="text-3xl text-[#0c2c5d]" />
+                <span className="hidden md:block font-semibold text-[#0c2c5d]">Learn More</span>
               </button>
             </div>
             <div>
               <img
                 src={s.img}
                 alt=""
-                // className="h-[130px] md:h-[170px] w-[165px] md:w-[210px]"
+                className="h-[130px] md:h-[170px] w-[165px] md:w-[210px]"
               />
             </div>
           </div>
         ))}
-        {/* <div className="bg-[#4175FC] p-10 flex items-center justify-between rounded-xl shadow-xl border-4 border-[#292A32] hover:scale-105 duration-200 ease-linear">
-          <div className="flex flex-col h-full justify-between">
-            <h5 className="text-white font-semibold text-xl md:text-3xl">
-              TEST DESIGN
-            </h5>
-            <button className="text-white flex items-center gap-2">
-              <BsFillArrowUpRightCircleFill className="text-3xl" />
-              <span className="hidden md:block">Learn More</span>
-            </button>
-          </div>
-          <div>
-            <img src={comercialImg} alt="" />
-          </div>
-        </div>
-        <div className="bg-[#4176fcc7] p-10 flex items-center justify-between rounded-xl shadow-xl border-4 border-[#292A32] hover:scale-105 duration-200 ease-linear">
-          <div className="flex flex-col h-full justify-between">
-            <h5 className="text-white font-semibold text-xl md:text-3xl">
-              TEST DESIGN 2
-            </h5>
-            <button className="text-white flex items-center gap-2">
-              <BsFillArrowUpRightCircleFill className="text-3xl" />
-              <span className="hidden md:block">Learn More</span>
-            </button>
-          </div>
-          <div>
-            <img src={comercialImg} alt="" />
-          </div>
-        </div> */}
       </div>
     </div>
   );

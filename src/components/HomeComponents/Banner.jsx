@@ -11,7 +11,7 @@ export default function Banner() {
           <p className='lg:text-[20px] my-5'>
           Coding Pixels, Framing Brands, & Showcasing Values— Welcome To BidViser, Where Creativity Blends With Technology To Translate Your Dreams Into A Leading Digital Legacy.
           </p>
-          <Button className='hover:bg-[#4175FC] duration-300 ease-linear'>
+          <Button className='hover:bg-[#4175FC] bg-[#0c2c5d] duration-300 ease-linear'>
             Book an appointment
           </Button>
       </div>

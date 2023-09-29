@@ -85,7 +85,7 @@ export default function Testimonial() {
             <SwiperSlide key={i}>
               <div className="relative p-4 sm:p-6 md:p-8 lg:p-10 bg-[#292A32] text-white rounded-xl shadow-xl border-2 border-[#4175FC]">
                 <FaQuoteLeft className="text-4xl sm:text-5xl lg:text-6xl text-[#4175FC] mb-2 sm:mb-4" />
-                <p className="text-base sm:text-lg lg:text-xl my-2 sm:my-4">
+                <p className="text-base sm:text-lg lg:text-xl my-2 sm:my-4 text-white">
                   {d.desc}
                 </p>
                 <div className="flex items-center gap-1 text-[#FFD700] text-base sm:text-xl lg:text-2xl my-2 sm:my-4">
@@ -96,8 +96,8 @@ export default function Testimonial() {
                   <AiFillStar />
                 </div>
                 <div className="text-sm sm:text-base lg:text-lg">
-                  <p className="font-semibold">{d.name}</p>
-                  <p>{d.position}</p>
+                  <p className="font-semibold text-white">{d.name}</p>
+                  <p className="text-white">{d.position}</p>
                 </div>
               </div>
             </SwiperSlide>

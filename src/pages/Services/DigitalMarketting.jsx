@@ -60,6 +60,52 @@ export default function DigitalMarketting() {
       desc: "A well-exploited digital marketing scheme bases its success on wide audience reach and efficient lead generation, often resulting in a significantly higher ROI than traditional media.",
     },
   ];
+  const effectiveData = [
+    {
+      name: "Search Engine Optimization (SEO)",
+      desc: "Enhancing visibility and positioning websites higher up in organic search engine result pages.",
+    },
+    {
+      name: "Social Media Marketing (SMM)",
+      desc: "Using social networks as marketing tools to promote businesses and engage with a target audience.",
+    },
+    {
+      name: "Content Marketing",
+      desc: "Creating and sharing online material such as blogs, infographics, videos, that does not explicitly promote a brand but stimulates interest in its products or services.",
+    },
+    {
+      name: "Pay-Per-Click (PPC) & Google Ads",
+      desc: "Advertising services designed to drive traffic to websites, whereby the advertiser pays a fee each time one of their ads is clicked.",
+    },
+    {
+      name: "Email Marketing",
+      desc: "Communicating with an audience via well-designed, purposeful emails aiming to promote offers, provide education, or build loyalty and trust.",
+    },
+    {
+      name: "Lead Generation",
+      desc: "Implementing strategies to generate interest and inquiries for business' products or services.",
+    },
+    {
+      name: "Conversion Rate Optimization (CRO)",
+      desc: "Structuring and arranging website features and components to enhance usability and boost the number of conversions from visitor to customer.",
+    },
+    {
+      name: "Website and Ecommerce Design",
+      desc: "Structuring elements and creating aesthetic designs that ensure easy navigation, enhancing visitor interaction, and increasing website dwell time.",
+    },
+    {
+      name: "Mobile Marketing",
+      desc: "Strategic marketing approach aimed at reaching users on their mobile devices or tablets via websites, emails, SMS, social media, and apps.",
+    },
+    {
+      name: "Video Marketing",
+      desc: "Using video as a means to market your product or service, promote engagement, education, and conversion.",
+    },
+    {
+      name: "Analytics & Reporting",
+      desc: "Providing data across possibilities and streamlining it into usable detail leading to actions improving Digital Marketing ROI.",
+    },
+  ];
   return (
     <div className="mx-5 md:container md:mx-auto">
       <div className="md:flex gap-10 my-5 md:my-10 py-5 md:py-10">
@@ -84,12 +130,14 @@ export default function DigitalMarketting() {
           />
         </div>
       </div>
-      <div className="my-5 md:my-10 p-5 md:p-10 rounded-xl bg-black/90 text-white">
-        <p className="text-center font-semibold lg:text-[20px]">Our Approach</p>
+      <div className="my-5 md:my-10 p-5 py-10 md:p-10 rounded-xl bg-black/90 text-white">
+        <h5 className="text-center font-semibold text-[24px] lg:text-[34px]">
+          Our Approach
+        </h5>
         <h1 className="text-center text-[40px] lg:text-[60px] mt-5 font-semibold">
           Insight. Creativity. Technology.
         </h1>
-        <p className="text-center lg:text-[20px] mt-5 mb-10">
+        <p className="text-white text-center lg:text-[20px] mt-5 mb-10">
           Your Guide to Digital Marketing: Translating Data into Perceptive
           Insights, Harnessing Creativity to Innovate, and Utilizing
           Cutting-Edge Technology for Performance Beyond Benchmark.
@@ -98,7 +146,7 @@ export default function DigitalMarketting() {
           <div className="flex border-2 border-[#4175FC] flex-col items-center rounded-xl gap-2 bg-[#292A32] p-4">
             <AiOutlineBlock className="text-3xl md:text-5xl text-[#4175FC]" />
             <h5 className="text-xl font-semibold">Concept</h5>
-            <p className="text-center">
+            <p className="text-center text-white">
               Demystifying Essential Foundations - Unleashing the Power of
               Creative Concepts in Digital Marketing Services.
             </p>
@@ -106,7 +154,7 @@ export default function DigitalMarketting() {
           <div className="flex border-2 border-[#4175FC] flex-col items-center rounded-xl gap-2 bg-[#292A32] p-4">
             <TbBuildingCarousel className="text-3xl md:text-5xl text-[#4175FC]" />
             <h5 className="text-xl font-semibold">Build</h5>
-            <p className="text-center">
+            <p className="text-center text-white">
               The Crucial Verdict - Evaluating Outcomes and Proving
               Effectiveness From Our Comprehensive Digital Approach.
             </p>
@@ -114,7 +162,7 @@ export default function DigitalMarketting() {
           <div className="flex border-2 border-[#4175FC] flex-col items-center rounded-xl gap-2 bg-[#292A32] p-4">
             <AiOutlineOrderedList className="text-3xl md:text-5xl text-[#4175FC]" />
             <h5 className="text-xl font-semibold">Test</h5>
-            <p className="text-center">
+            <p className="text-center text-white">
               Market Analysis: Deploying and Refining Strategies for Optimal
               Outcome.
             </p>
@@ -124,7 +172,7 @@ export default function DigitalMarketting() {
       <div className="lg:flex gap-10 my-5 md:my-10 py-5 md:py-10">
         <div className="lg:w-1/2">
           {/* Productive Progressive */}
-          <p className="text-xl md:text-3xl font-semibold">
+          <p className="text-2xl md:text-4xl font-semibold">
             Top 10 Reasons to Choose Digital Marketing Services for Your Brand
           </p>
           <p className="text-justify md:text-xl my-5">
@@ -154,37 +202,52 @@ export default function DigitalMarketting() {
       </div>
       <div className="my-5 md:my-10 py-5 md:py-10 lg:flex gap-10">
         <div className="lg:w-2/5">
-          <Lottie
-            animationData={WorkWithUs}
-            loop={true}
-            style={style}
-          />
+          <Lottie animationData={WorkWithUs} loop={true} style={style} />
         </div>
         <div className="lg:w-3/5">
-          <p className="text-xl md:text-3xl font-semibold">
-            Boost ROI with Expert Digital Advertising Services - Maximize Reach
-            for Optimal Results!
+          <p className="text-2xl md:text-4xl font-semibold">
+            The Compelling Need for Digital Marketing in Modern Business
+            Landscape
           </p>
           <p className="text-justify md:text-xl my-5">
-            Unlock the power of your business with our expert Digital
-            Advertising Services. In today’s fast-paced digital landscape,
-            staying ahead of the competition requires strategic and targeted
-            campaigns that drive results. At our agency, we specialize in
-            crafting bespoke digital marketing solutions tailored to your unique
-            needs, ensuring maximum reach and optimal ROI. With our team of
-            experienced professionals, we excel in PPC Management, leveraging
-            data-driven insights to deliver impactful ad campaigns that convert
-            leads into loyal customers. Our comprehensive approach encompasses
-            keyword research, audience segmentation, and compelling ad creatives
-            to engage your target audience and boost brand visibility. Whether
-            you’re a startup seeking rapid growth or an established brand
-            looking to enhance your online presence, our Digital Advertising
-            Services have got you covered. Elevate your business to new heights
-            with our proven expertise and measurable results. Take the first
-            step towards success – contact us today for a free consultation and
-            unlock the full potential of your digital marketing endeavors!
+            Embrace the transformative power of Digital Marketing Services and
+            catapult your business into the digital future. Harness robust
+            engagement tools like ‘Social Media Marketing’, create an online
+            persona with ‘Content Marketing’ and master ‘SEO’ techniques to
+            climb up in the customers’ search result. Illuminate your
+            opportunities, descend upon them vigorously and scale new heights,
+            only imagined before. Your business deserves more, it craves
+            exposure via ‘PPC’ ads – all set within the framing framework of
+            delivering unparalleled user experience. So, make a positive shift
+            today. Dive into the digital world with us, because the future of
+            your business begins here! Act now and propel your enterprise
+            towards its fast-tracked evolution.
           </p>
           <Button>Let's Work Togather</Button>
+        </div>
+      </div>
+      <div className="my-5 md:my-10 p-5 py-5 md:p-10 rounded-xl">
+        <p className="text-center text-2xl md:text-4xl font-semibold">
+          11 Most Effective Digital Marketing Services for Boosting Web Traffic
+        </p>
+        <p className="text-center md:text-xl mt-5">
+          Don’t miss these top 11 digital marketing strategies boosting web
+          traffic. Explore SEO mastery, strategic social media, smart PPC
+          investments, and insightful content marketing. Connect with more
+          visitors and enhance web traffic – make the smart move today.
+        </p>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-10">
+          {effectiveData.map((ed, i) => (
+            <div
+              key={i}
+              className="bg-[#292A32] p-4 rounded-xl border-2 border-[#4175FC] hover:scale-105 duration-200 ease-linear"
+            >
+              <p className="text-white text-xl font-semibold">
+                {i + 1}. {ed.name}
+              </p>
+              <p className="text-white mt-2.5">{ed.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
