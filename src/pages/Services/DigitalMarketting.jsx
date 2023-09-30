@@ -10,6 +10,7 @@ import {
   AccordionBody,
   Button,
 } from "@material-tailwind/react";
+import Dialogue from "../../components/shared/Dialogue/Dialogue";
 
 export default function DigitalMarketting() {
   //top 10 accordion
@@ -20,6 +21,11 @@ export default function DigitalMarketting() {
   const [openFaq, setFaqOpen] = React.useState(0);
   const handleFaqOpen = (value) => setFaqOpen(open === value ? 0 : value);
 
+  // dialogue open
+  const [openDialogue, setDialogueOpen] = React.useState(false);
+  const handleOpenDialogue = () => setDialogueOpen(!openDialogue);
+
+  //anim style
   const style = {
     height: 400,
   };
@@ -262,7 +268,18 @@ export default function DigitalMarketting() {
             your business begins here! Act now and propel your enterprise
             towards its fast-tracked evolution.
           </p>
-          <Button className="bg-[#0c2c5d] hover:bg-[#4175FC] duration-300 ease-linear">Let's Work Togather</Button>
+          <Button
+            className="bg-[#0c2c5d] hover:bg-[#4175FC] duration-300 ease-linear"
+            onClick={handleOpenDialogue}
+          >
+            Let's Work Togather
+          </Button>
+          {openDialogue && (
+            <Dialogue
+              openDialogue={openDialogue}
+              handleOpenDialogue={handleOpenDialogue}
+            />
+          )}
         </div>
       </div>
       <div className="my-5 md:my-10 p-5 py-5 md:p-10">
@@ -290,7 +307,9 @@ export default function DigitalMarketting() {
         </div>
       </div>
       <div className="my-5 md:my-10 p-5 py-5 md:p-10 rounded-xl shadow">
-        <h5 className="text-[#0c2c5d] text-center text-2xl md:text-4xl font-semibold">F.A.Q.</h5>
+        <h5 className="text-[#0c2c5d] text-center text-2xl md:text-4xl font-semibold">
+          F.A.Q.
+        </h5>
         <p className="text-center md:text-xl mt-5">
           Frequently Asked Questions (FAQ) About Social Media Marketing Services
         </p>

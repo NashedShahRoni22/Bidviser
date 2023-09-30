@@ -146,10 +146,11 @@ export default function WorkingProcess() {
           <Accordion
             open={open === i}
             key={i}
-            className="shadow rounded-xl p-5 my-10"
+            className="shadow rounded-xl p-5 my-10 bg-gradient-to-tr from-[#e8f6fc]"
+            
           >
             <AccordionHeader onClick={() => handleOpen(i)}>
-              <div className="w-full flex justify-between text-black">
+              <div className="w-full flex justify-between text-[#0c2c5d]">
                 {p.name}
                 {open === i ? (
                   <AiFillMinusCircle className="text-3xl text-[#0c2c5d]" />
