@@ -1,14 +1,15 @@
 import React from "react";
 import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Bottombar() {
   return (
-    <footer className="mx-5 p-10 lg:p-15 md:container md:mx-auto relative bg-black/90 text-gray-200 rounded-tr-3xl rounded-tl-3xl">
+    <footer className="mx-5 mt-3 p-10 lg:p-15 md:container md:mx-auto relative bg-black/90 text-gray-200 rounded-tr-3xl rounded-tl-3xl">
       <div className="flex flex-col md:flex-row gap-5 items-center md:justify-between">
         <p className="text-xl md:text-3xl font-bold text-white">NSRDev</p>
         <ul className="flex gap-5 md:text-lg lg:text-xl">
           <li>About Us</li>
-          <li>Services</li>
+          <Link to='/service'>Services</Link>
           <li>Blog</li>
         </ul>
         <ul className="flex gap-3">
