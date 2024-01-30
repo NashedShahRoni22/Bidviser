@@ -36,7 +36,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="px-4">
+    <div className="px-5">
       <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#0c2c5d]">
         Services
       </h2>

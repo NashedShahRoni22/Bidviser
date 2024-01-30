@@ -1,8 +1,4 @@
-import {
-  RouterProvider,
-  createBrowserRouter,
- 
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Main from "./layout/Main";
 import DigitalMarketting from "./pages/Services/DigitalMarketting";
@@ -12,10 +8,7 @@ import Contact from "./components/HomeComponents/Contact";
 import Services from "./components/HomeComponents/Services";
 import Commingsoon from "./pages/commingSoon/Commingsoon";
 
-
-
 function App() {
- 
   const router = createBrowserRouter([
     {
       path: "/",
@@ -31,15 +24,19 @@ function App() {
         },
         {
           path: "/contact_us",
-          element: <Contact/>,
+          element: (
+            <div className="mx-5 py-10 md:container md:mx-auto">
+              <Contact />,
+            </div>
+          ),
         },
         {
           path: "/service",
-          element:<Services/>,
+          element: <Services />,
         },
         {
           path: "/commingsoon",
-          element:<Commingsoon/>,
+          element: <Commingsoon />,
         },
       ],
     },
