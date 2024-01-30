@@ -63,7 +63,7 @@ export default function Dialogue({handleOpenDialogue}) {
       </DialogFooter>
       <ul className="flex justify-center gap-4 p-5 md:p-10">
         <li>
-          <a href="https://www.facebook.com/BidViser" target="_blank">
+          <a href="https://www.facebook.com/NSRDev" target="_blank">
             <BsFacebook className="text-[#4175FC] text-xl md:text-2xl lg:text-3xl" />
           </a>
         </li>

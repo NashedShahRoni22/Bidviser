@@ -17,7 +17,7 @@ export default function Banner() {
         </h1>
         <p className="lg:text-[20px] my-5">
           Coding Pixels, Framing Brands, & Showcasing Values— Welcome To
-          BidViser, Where Creativity Blends With Technology To Translate Your
+          NSRDev, Where Creativity Blends With Technology To Translate Your
           Dreams Into A Leading Digital Legacy.
         </p>
         <Button

@@ -19,32 +19,32 @@ export default function Testimonial() {
     {
       name: "Nashed Shah Roni",
       position: "Software Engineer",
-      desc: "Exceptional Digital Marketing Partner BidViser has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
+      desc: "Exceptional Digital Marketing Partner NSRDev has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
     },
     {
       name: "Nashed Shah Roni",
       position: "Software Engineer",
-      desc: "Exceptional Digital Marketing Partner BidViser has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
+      desc: "Exceptional Digital Marketing Partner NSRDev has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
     },
     {
       name: "Nashed Shah Roni",
       position: "Software Engineer",
-      desc: "Exceptional Digital Marketing Partner BidViser has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
+      desc: "Exceptional Digital Marketing Partner NSRDev has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
     },
     {
       name: "Nashed Shah Roni",
       position: "Software Engineer",
-      desc: "Exceptional Digital Marketing Partner BidViser has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
+      desc: "Exceptional Digital Marketing Partner NSRDev has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
     },
     {
       name: "Nashed Shah Roni",
       position: "Software Engineer",
-      desc: "Exceptional Digital Marketing Partner BidViser has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
+      desc: "Exceptional Digital Marketing Partner NSRDev has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
     },
     {
       name: "Nashed Shah Roni",
       position: "Software Engineer",
-      desc: "Exceptional Digital Marketing Partner BidViser has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
+      desc: "Exceptional Digital Marketing Partner NSRDev has transformed our online visibility with their tailored strategies and expert SEO implementation. They're professional, responsive, and deliver clear results. Highly recommend!",
     },
   ];
   return (

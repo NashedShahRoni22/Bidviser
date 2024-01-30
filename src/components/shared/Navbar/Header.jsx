@@ -20,12 +20,12 @@ export default function Header() {
       link: "",
       child: [
         {
-          name: "Web Design & Development",
-          link: "",
-        },
-        {
           name: "Digital Marketting",
           link: "/digital_marketting",
+        },
+        {
+          name: "Web Design & Development",
+          link: "",
         },
         {
           name: "Digital Advertising",
@@ -64,8 +64,9 @@ export default function Header() {
     <nav className="">
       <section className="m-5 md:container md:mx-auto relative">
         <div className="flex items-center justify-between">
-          <Link to={"/"}>
-            <img src={logo} alt="" className="h-[50px] w-[150px]" />
+          <Link to={"/"} className="font-extrabold text-transparent text-xl md:text-3xl bg-clip-text bg-gradient-to-r from-[#0c2c5d] to-[#4175FC]">
+            {/* <img src={logo} alt="" className="h-[50px] w-[150px]" /> */}
+            NSRDev
           </Link>
           <div>
             {/* desktop navbar */}
