@@ -6,6 +6,7 @@ import seoImg from "../../assets/services/Search Engine Optimization(SEO).svg";
 import socialMediaImg from "../../assets/services/Social Media Marketing.svg";
 import webImg from "../../assets/services/Web Design & Development.svg";
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   const services = [
@@ -35,7 +36,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="">
+    <div className="px-4">
       <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#0c2c5d]">
         Services
       </h2>
@@ -62,7 +63,7 @@ export default function Services() {
               >
                 {s.name}
               </h5>
-              <button
+              <Link to='/digital_marketting'
                 // className={`${
                 //   i % 2 === 0 ? "text-white" : "text-black"
                 // } flex items-center gap-2`}
@@ -70,7 +71,7 @@ export default function Services() {
               >
                 <BsFillArrowUpRightCircleFill className="text-3xl text-[#0c2c5d]" />
                 <span className="hidden md:block font-semibold text-[#0c2c5d]">Learn More</span>
-              </button>
+              </Link>
             </div>
             <div>
               <img
