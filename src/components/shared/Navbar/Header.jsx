@@ -26,34 +26,34 @@ export default function Header() {
       link: "",
       child: [
         {
-          name: "Digital Marketting",
-          link: "/digital_marketting",
-        },
-        {
           name: "Web Design & Development",
           link: "/commingsoon",
         },
         {
-          name: "Digital Advertising",
+          name: "Web App Development",
           link: "/commingsoon",
         },
         {
-          name: "SEO",
+          name: "UI/UX Design",
           link: "/commingsoon",
         },
         {
-          name: "Social Media Marketing",
+          name: "Digital Marketting",
+          link: "/digital_marketting",
+        },
+        {
+          name: "Graphics Design",
           link: "/commingsoon",
         },
         {
-          name: "Comercial Video & Photography",
+          name: "Comercial Video",
           link: "/commingsoon",
         },
       ],
     },
     {
       name: "About Us",
-      link: "/commingsoon",
+      link: "/about_us",
     },
     {
       name: "Blog",

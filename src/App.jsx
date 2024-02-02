@@ -7,6 +7,7 @@ import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 import Contact from "./components/HomeComponents/Contact";
 import Services from "./components/HomeComponents/Services";
 import Commingsoon from "./pages/commingSoon/Commingsoon";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,11 +33,19 @@ function App() {
         },
         {
           path: "/service",
-          element: <Services />,
+          element: (
+            <div className="mx-5 py-10 md:container md:mx-auto">
+              <Services />,
+            </div>
+          ),
         },
         {
           path: "/commingsoon",
           element: <Commingsoon />,
+        },
+        {
+          path: "/about_us",
+          element: <AboutUs />,
         },
       ],
     },
