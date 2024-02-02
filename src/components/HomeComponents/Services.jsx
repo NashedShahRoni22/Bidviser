@@ -1,6 +1,6 @@
 import React from "react";
 import comercialImg from "../../assets/services/Comercial Video & Photography.svg";
-import digitalMarkettingImg from "../../assets/services/Digital Marketing.svg";
+import webDesign from "../../assets/png.png";
 import digitalAdvertisingImg from "../../assets/services/Digital Advertising.svg";
 import seoImg from "../../assets/services/Search Engine Optimization(SEO).svg";
 import socialMediaImg from "../../assets/services/Social Media Marketing.svg";
@@ -11,27 +11,28 @@ import { Link } from "react-router-dom";
 export default function Services() {
   const services = [
     {
-      name: "Digital Marketing",
-      img: digitalAdvertisingImg,
-    },
-    {
-      name: "Digital Advertising",
-      img: digitalMarkettingImg,
-    },
-    {
-      name: "Web Design & Development",
+      name: "UI/UX Design",
       img: webImg,
     },
     {
-      name: "Search Engine Optimization(SEO)",
+      name: "Web Design",
+      img: webDesign,
+    },
+    {
+      name: "Web App Development",
+      img: digitalAdvertisingImg,
+    },
+    
+    {
+      name: "Digital Marketting",
       img: seoImg,
     },
     {
-      name: "Comercial Video & Photography",
+      name: "Graphics Design",
       img: comercialImg,
     },
     {
-      name: "Social Media Marketing",
+      name: "Comercial Video",
       img: socialMediaImg,
     },
   ];
@@ -49,7 +50,7 @@ export default function Services() {
         {services.map((s, i) => (
           <div
             key={i}
-            className="bg-gradient-to-tr from-[#e8f6fc] p-10 flex items-center justify-between rounded-xl shadow hover:scale-105 duration-200 ease-linear"
+            className="bg-gradient-to-tr from-[#e8f6fcce] p-10 flex items-center justify-between rounded-xl shadow hover:scale-105 duration-200 ease-linear"
             // className={`${
             //   i % 2 === 0 ? "bg-black/90" : "bg-white"
             // } p-10 flex items-center justify-between rounded-xl shadow-xl hover:shadow-none duration-300`}

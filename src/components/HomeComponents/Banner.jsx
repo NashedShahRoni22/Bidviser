@@ -12,17 +12,18 @@ export default function Banner() {
     <div className="md:flex items-center">
       <div className="md:w-1/2">
         <h1 className="text-[40px] lg:text-[60px] font-semibold">
-          One Stop Digital Services Agency in{" "}
-          <span className="text-[#4175FC]">Bangladesh</span>
+          One Stop Web Services Agency in{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2317A9] to-[#6C5AF6]">Bangladesh</span>
+          {/* <span className="text-[#6C5AF6]">Bangladesh</span> */}
         </h1>
         <p className="lg:text-[20px] my-5">
           Coding Pixels, Framing Brands, & Showcasing Values— Welcome To
           NSRDev, Where Creativity Blends With Technology To Translate Your
-          Dreams Into A Leading Digital Legacy.
+          Dreams Into A Leading Web Legacy.
         </p>
         <Button
           onClick={handleOpenDialogue}
-          className="hover:bg-[#4175FC] bg-[#0c2c5d] duration-300 ease-linear"
+          className="bg-gradient-to-tr hover:bg-gradient-to-tl from-[#2317A9] to-[#6C5AF6] duration-300 ease-linear"
         >
           Book an appointment
         </Button>
