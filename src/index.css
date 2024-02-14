@@ -7,20 +7,18 @@
 * {
   font-family: "Barlow", sans-serif;
 }
-/* black color: 292A32 */
-/* blue color: 4175FC */
-/* dark blue color: 0c2c5d */
 h1, h2, h3, h4, h5 {
   font-family: "Space Grotesk", sans-serif;
 }
-/* p{
-  color: #0c2c5d
-} */
 .company-img {
   filter: grayscale(100%);
 }
 .company-img:hover {
   filter: grayscale(0%);
+}
+
+.company-img:hover .absolute {
+  opacity: 1;
 }
 /* Custom pagination styles */
 .custom-pagination .swiper-pagination-bullet {

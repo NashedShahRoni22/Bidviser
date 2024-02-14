@@ -50,7 +50,7 @@ export default function Services() {
         {services.map((s, i) => (
           <div
             key={i}
-            className="bg-gradient-to-tr from-[#e8f6fcce] p-10 flex items-center justify-between rounded-xl shadow hover:scale-105 duration-200 ease-linear"
+            className=" p-10 flex items-center justify-between rounded-xl shadow hover:shadow-xl duration-300 ease-linear"
             // className={`${
             //   i % 2 === 0 ? "bg-black/90" : "bg-white"
             // } p-10 flex items-center justify-between rounded-xl shadow-xl hover:shadow-none duration-300`}
