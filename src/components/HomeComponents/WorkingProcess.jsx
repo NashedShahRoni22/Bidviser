@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionHeader,
@@ -6,18 +6,9 @@ import {
 } from "@material-tailwind/react";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { AiFillMinusCircle } from "react-icons/ai";
-import dynamic from "../../assets/company/dynamic-exim.png";
-
-import img1 from "../../assets/company/1.png";
-import img2 from "../../assets/company/2.png";
-import img3 from "../../assets/company/6.png";
-import img4 from "../../assets/company/12.png";
-import img5 from "../../assets/company/new.webp";
-import Projects from "./Projects";
 
 export default function WorkingProcess() {
-  const images = [img1, img2, img3, img4, img5];
-
+  const [open, setOpen] = useState(0);
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const processes = [
     {
@@ -52,8 +43,8 @@ export default function WorkingProcess() {
     },
   ];
   return (
-    <div className="mt-10 p-5 md:p-10">
-      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#0c2c5d]">
+    <div className="mt-10 py-5 md:py-10">
+      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#2317A9]">
         Our Working Process
       </h2>
       <p className="lg:text-xl my-5">
@@ -68,12 +59,12 @@ export default function WorkingProcess() {
           className="shadow rounded-xl p-5 my-10 bg-gradient-to-tr from-[#e8f6fc]"
         >
           <AccordionHeader onClick={() => handleOpen(i)}>
-            <div className="w-full flex justify-between text-[#0c2c5d]">
+            <div className="w-full flex justify-between text-[#2317A9]">
               {p.name}
               {open === i ? (
-                <AiFillMinusCircle className="text-3xl text-[#0c2c5d]" />
+                <AiFillMinusCircle className="text-3xl text-[#2317A9]" />
               ) : (
-                <BsFillPlusCircleFill className="text-3xl text-[#0c2c5d]" />
+                <BsFillPlusCircleFill className="text-3xl text-[#2317A9]" />
               )}
             </div>
           </AccordionHeader>

@@ -37,8 +37,8 @@ export default function Services() {
     },
   ];
   return (
-    <div className="px-5">
-      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#0c2c5d]">
+    <div className="mt-10 py-5 md:py-10">
+      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#2317A9]">
         Services
       </h2>
       <p className="lg:text-xl mt-5">
@@ -60,7 +60,7 @@ export default function Services() {
                 // className={`${
                 //   i % 2 === 0 ? "text-white" : "text-black"
                 // } font-semibold text-xl md:text-3xl`}
-                className="font-semibold text-xl md:text-3xl text-[#0c2c5d]"
+                className="font-semibold text-xl md:text-3xl text-[#2317A9]"
               >
                 {s.name}
               </h5>
@@ -70,8 +70,8 @@ export default function Services() {
                 // } flex items-center gap-2`}
                 className="flex items-center gap-2"
               >
-                <BsFillArrowUpRightCircleFill className="text-3xl text-[#0c2c5d]" />
-                <span className="hidden md:block font-semibold text-[#0c2c5d]">Learn More</span>
+                <BsFillArrowUpRightCircleFill className="text-3xl text-[#2317A9]" />
+                <span className="hidden md:block font-semibold text-[#2317A9]">Learn More</span>
               </Link>
             </div>
             <div>

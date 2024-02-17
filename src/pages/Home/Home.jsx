@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="mx-5 py-10 md:container md:mx-auto">
         <Banner/>
-        <Company/>
+        {/* <Company/> */}
         <Services/>
         <Projects/>
         <WorkingProcess/>

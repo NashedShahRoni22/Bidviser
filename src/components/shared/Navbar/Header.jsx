@@ -56,7 +56,7 @@ export default function Header() {
       link: "/about_us",
     },
     {
-      name: "Blog",
+      name: "Portfolio",
       link: "/commingsoon",
     },
   ];

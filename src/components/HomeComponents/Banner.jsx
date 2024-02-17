@@ -1,15 +1,17 @@
 import React from "react";
-import bannerImg from "../../assets/banner.png";
+// import bannerImg from "../../assets/banner.png";
+import bannerAnim from "../../assets/anim/BannerLaptop.json";
 import {
   Button,
 } from "@material-tailwind/react";
 import Dialogue from "../shared/Dialogue/Dialogue";
+import Lottie from "lottie-react";
 export default function Banner() {
   const [openDialogue, setDialogueOpen] = React.useState(false);
   const handleOpenDialogue = () => setDialogueOpen(!openDialogue);
 
   return (
-    <div className="md:flex items-center">
+    <div className="md:flex items-center lg:min-h-[80vh]">
       <div className="md:w-1/2">
         <h1 className="text-[40px] lg:text-[60px] font-semibold">
           One Stop Web Services Agency in{" "}
@@ -29,7 +31,8 @@ export default function Banner() {
         </Button>
       </div>
       <div className="md:w-1/2 mt-10 md:mt-0">
-        <img src={bannerImg} alt="" className="lg:h-[515px] lg:w-[600px]" />
+        {/* <img src={bannerImg} alt="" className="lg:h-[515px] lg:w-[600px]" /> */}
+        <Lottie animationData={bannerAnim} loop={true} />
       </div>
       {openDialogue && <Dialogue openDialogue={openDialogue} handleOpenDialogue={handleOpenDialogue} />}
     </div>
