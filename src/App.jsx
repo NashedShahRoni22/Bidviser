@@ -8,6 +8,8 @@ import Contact from "./components/HomeComponents/Contact";
 import Services from "./components/HomeComponents/Services";
 import Commingsoon from "./pages/commingSoon/Commingsoon";
 import AboutUs from "./pages/AboutUs";
+import WorkingProcess from "./components/HomeComponents/WorkingProcess";
+import Projects from "./components/HomeComponents/Projects";
 
 function App() {
   const router = createBrowserRouter([
@@ -42,6 +44,10 @@ function App() {
         {
           path: "/about_us",
           element: <AboutUs />,
+        },
+        {
+          path: "/our_work",
+          element: <Projects />,
         },
       ],
     },

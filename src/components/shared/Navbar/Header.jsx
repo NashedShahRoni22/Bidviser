@@ -57,7 +57,7 @@ export default function Header() {
     },
     {
       name: "Portfolio",
-      link: "/commingsoon",
+      link: "/our_work",
     },
   ];
   const handleDropdown = (id) => {

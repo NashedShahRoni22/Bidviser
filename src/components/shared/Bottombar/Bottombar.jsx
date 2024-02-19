@@ -5,7 +5,7 @@ import logo from "../../../assets/logo_white.png";
 
 export default function Bottombar() {
   return (
-    <footer className=" mt-10 p-10 lg:p-20 relative bg-black/90 text-gray-200">
+    <footer className="p-10 lg:p-20 relative bg-black/90 text-gray-200">
       <div className="md:container md:mx-auto">
         <div className="flex flex-col md:flex-row gap-5 items-center md:justify-between">
           <img src={logo} alt="" className="h-[28px] md:h-[44px]" />

@@ -43,7 +43,7 @@ export default function WorkingProcess() {
     },
   ];
   return (
-    <div className="mt-10 py-18 md:py-36 bg-black">
+    <div className="py-16 md:py-32 bg-black">
       <div className="mx-5 md:container md:mx-auto">
         <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#6C5AF6]">
           Our Working Process

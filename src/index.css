@@ -34,3 +34,12 @@ h1, h2, h3, h4, h5 {
   background-color: #4175fc;
   opacity: 1;
 }
+
+.about-banner{
+  background: url("../src/assets/about-banner.png");
+  min-height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
