@@ -11,7 +11,7 @@ export default function Banner() {
   const handleOpenDialogue = () => setDialogueOpen(!openDialogue);
 
   return (
-    <div className="md:flex items-center lg:min-h-[80vh]">
+    <div className="mx-5 md:flex md:container md:mx-auto items-center lg:min-h-[80vh]">
       <div className="md:w-1/2">
         <h1 className="text-[40px] lg:text-[60px] font-semibold">
           One Stop Web Services Agency in{" "}

@@ -33,11 +33,7 @@ function App() {
         },
         {
           path: "/service",
-          element: (
-            <div className="mx-5 py-10 md:container md:mx-auto">
-              <Services />,
-            </div>
-          ),
+          element: <Services />,
         },
         {
           path: "/commingsoon",

@@ -43,34 +43,36 @@ export default function WorkingProcess() {
     },
   ];
   return (
-    <div className="mt-10 py-5 md:py-10">
-      <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#2317A9]">
-        Our Working Process
-      </h2>
-      <p className="lg:text-xl my-5">
-        Our team of experts harnesses the power of various online marketing
-        strategies, including SEO, content marketing, social media marketing,
-        email campaigns, PPC advertising, and data analytics.
-      </p>
-      {processes.map((p, i) => (
-        <Accordion
-          open={open === i}
-          key={i}
-          className="shadow rounded-xl p-5 my-10 bg-gradient-to-tr from-[#e8f6fc]"
-        >
-          <AccordionHeader onClick={() => handleOpen(i)}>
-            <div className="w-full flex justify-between text-[#2317A9]">
-              {p.name}
-              {open === i ? (
-                <AiFillMinusCircle className="text-3xl text-[#2317A9]" />
-              ) : (
-                <BsFillPlusCircleFill className="text-3xl text-[#2317A9]" />
-              )}
-            </div>
-          </AccordionHeader>
-          <AccordionBody>{p.details}</AccordionBody>
-        </Accordion>
-      ))}
+    <div className="mt-10 py-18 md:py-36 bg-black">
+      <div className="mx-5 md:container md:mx-auto">
+        <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#6C5AF6]">
+          Our Working Process
+        </h2>
+        <p className="lg:text-xl my-5 text-white">
+          Our team of experts harnesses the power of various online marketing
+          strategies, including SEO, content marketing, social media marketing,
+          email campaigns, PPC advertising, and data analytics.
+        </p>
+        <div className="grid gap-5 mt-10">
+          {processes.map((p, i) => (
+            <Accordion open={open === i} key={i} className="py-2.5 group">
+              <AccordionHeader onClick={() => handleOpen(i)}>
+                <div className="w-full flex justify-between text-[#6C5AF6]">
+                  {p.name}
+                  {open === i ? (
+                    <AiFillMinusCircle className="text-3xl text-[#6C5AF6]" />
+                  ) : (
+                    <BsFillPlusCircleFill className="text-3xl text-[#6C5AF6]" />
+                  )}
+                </div>
+              </AccordionHeader>
+              <AccordionBody className="text-white/40 group-hover:text-white">
+                {p.details}
+              </AccordionBody>
+            </Accordion>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

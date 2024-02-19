@@ -8,7 +8,7 @@ export default function Contact() {
     height: 300,
   };
   return (
-    <div className="md:flex p-5 md:p-10 items-center w-full shadow-xl rounded-xl">
+    <div className="md:flex p-5 md:p-10 items-center w-full shadow-xl rounded-xl md:container md:mx-auto">
       <form action="" className="md:w-1/2 flex flex-col gap-2.5">
         <div>
           <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-[#2317A9]">

@@ -11,9 +11,9 @@ import Projects from '../../components/HomeComponents/Projects'
 
 export default function Home() {
   return (
-    <main className="mx-5 py-10 md:container md:mx-auto">
+    <main className="py-10">
         <Banner/>
-        {/* <Company/> */}
+        <Company/>
         <Services/>
         <Projects/>
         <WorkingProcess/>

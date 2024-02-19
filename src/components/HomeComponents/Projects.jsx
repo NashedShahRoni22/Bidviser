@@ -31,7 +31,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="mt-10 py-5 md:py-10">
+    <div className="mt-10 py-5 md:py-10 mx-5 md:container md:mx-auto">
       <h2 className="text-[#2317A9] text-xl md:text-3xl lg:text-5xl font-semibold">
         Our Works
       </h2>

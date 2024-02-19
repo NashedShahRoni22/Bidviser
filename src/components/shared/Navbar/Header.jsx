@@ -30,23 +30,23 @@ export default function Header() {
           link: "/commingsoon",
         },
         {
-          name: "Web Design",
+          name: "Custom Website Development",
           link: "/commingsoon",
         },
         {
-          name: "Web App Development",
+          name: "Single Page Applications (SPA)",
           link: "/commingsoon",
         },
         {
-          name: "Digital Marketting",
-          link: "/digital_marketting",
-        },
-        {
-          name: "Graphics Design",
+          name: "Front-End Development",
           link: "/commingsoon",
         },
         {
-          name: "Comercial Video",
+          name: "E-commerce Development",
+          link: "/commingsoon",
+        },
+        {
+          name: "Back-End Development",
           link: "/commingsoon",
         },
       ],

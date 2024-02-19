@@ -48,8 +48,8 @@ export default function Testimonial() {
     },
   ];
   return (
-    <div className="p-5 md:p-10 mb-10 bg-black/90 rounded-3xl">
-      <h2 className="text-center text-white text-xl md:text-3xl lg:text-5xl font-semibold">
+    <div className="px-2.5 py-10 mb-10 bg-black/90 md:rounded-3xl md:container md:mx-auto">
+      <h2 className="text-center text-white text-xl md:text-3xl lg:text-5xl font-semibold mt-5">
         What Our Clients Says?
       </h2>
       <>
@@ -79,7 +79,7 @@ export default function Testimonial() {
             el: ".custom-pagination",
           }}
           modules={[EffectCoverflow, Pagination]}
-          className="mySwiper p-5 md:p-10"
+          className="mySwiper p-5 md:p-10 mt-5"
         >
           {data.map((d,i) => (
             <SwiperSlide key={i}>
