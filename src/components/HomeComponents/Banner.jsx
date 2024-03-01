@@ -16,7 +16,6 @@ export default function Banner() {
         <h1 className="text-[40px] lg:text-[60px] font-semibold">
           One Stop Web Services Agency in{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2317A9] to-[#6C5AF6]">Bangladesh</span>
-          {/* <span className="text-[#6C5AF6]">Bangladesh</span> */}
         </h1>
         <p className="lg:text-[20px] my-5">
           Coding Pixels, Framing Brands, & Showcasing Values— Welcome To
@@ -31,7 +30,6 @@ export default function Banner() {
         </Button>
       </div>
       <div className="md:w-1/2 mt-10 md:mt-0">
-        {/* <img src={bannerImg} alt="" className="lg:h-[515px] lg:w-[600px]" /> */}
         <Lottie animationData={bannerAnim} loop={true} />
       </div>
       {openDialogue && <Dialogue openDialogue={openDialogue} handleOpenDialogue={handleOpenDialogue} />}

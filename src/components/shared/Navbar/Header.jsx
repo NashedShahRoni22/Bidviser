@@ -23,33 +23,33 @@ export default function Header() {
     },
     {
       name: "Services",
-      link: "",
-      child: [
-        {
-          name: "UI/UX Design",
-          link: "/commingsoon",
-        },
-        {
-          name: "Custom Website Development",
-          link: "/commingsoon",
-        },
-        {
-          name: "Single Page Applications (SPA)",
-          link: "/commingsoon",
-        },
-        {
-          name: "Front-End Development",
-          link: "/commingsoon",
-        },
-        {
-          name: "E-commerce Development",
-          link: "/commingsoon",
-        },
-        {
-          name: "Back-End Development",
-          link: "/commingsoon",
-        },
-      ],
+      link: "/services",
+      // child: [
+      //   {
+      //     name: "UI/UX Design",
+      //     link: "/commingsoon",
+      //   },
+      //   {
+      //     name: "Custom Website Development",
+      //     link: "/commingsoon",
+      //   },
+      //   {
+      //     name: "Single Page Applications (SPA)",
+      //     link: "/commingsoon",
+      //   },
+      //   {
+      //     name: "Front-End Development",
+      //     link: "/commingsoon",
+      //   },
+      //   {
+      //     name: "E-commerce Development",
+      //     link: "/commingsoon",
+      //   },
+      //   {
+      //     name: "Back-End Development",
+      //     link: "/commingsoon",
+      //   },
+      // ],
     },
     {
       name: "About Us",
@@ -94,9 +94,9 @@ export default function Header() {
                       ))}
                     </ul>
                   )}
-                  {mi.child && (
+                  {/* {mi.child && (
                     <div className="h-2.5 w-2.5 bg-[#2317A9] rounded-full absolute -top-0 -right-1"></div>
-                  )}
+                  )} */}
                 </li>
               ))}
             </ul>
@@ -129,7 +129,7 @@ export default function Header() {
                   >
                     <Link to={mi.link}>{mi.name}</Link>
                   </div>
-                  {mi.child && (
+                  {/* {mi.child && (
                     <>
                       {openDropdown.status && openDropdown.index === i && (
                         <ul className="flex flex-col items-end mr-5">
@@ -147,7 +147,7 @@ export default function Header() {
                   )}
                   {mi.child && (
                     <div className="h-2.5 w-2.5 bg-[#2317A9] rounded-full absolute -top-0 -right-0"></div>
-                  )}
+                  )} */}
                 </li>
               ))}
             </ul>

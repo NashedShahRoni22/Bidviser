@@ -14,7 +14,7 @@ export default function AboutUs() {
             About <span className="text-[#6C5AF6]">NSRDEV</span>
           </h1>
           <p className="mt-5 md:mt-10 md:text-xl md:w-2/3 text-justify">
-            Welcome to NSRDEV, a leading software development company committed
+            Welcome to NSRDEV, a leading software development agency committed
             to delivering innovative and tailored solutions for our valued
             clients. With a dedicated team of skilled professionals, we
             specialize in crafting bespoke websites and web applications that

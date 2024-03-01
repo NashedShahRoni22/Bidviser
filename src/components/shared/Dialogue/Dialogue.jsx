@@ -2,9 +2,7 @@ import React from "react";
 import {
   Button,
   Dialog,
-  DialogHeader,
   DialogBody,
-  DialogFooter,
   Input,
   Option,
   Select,
@@ -12,7 +10,7 @@ import {
 } from "@material-tailwind/react";
 import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 
-export default function Dialogue({handleOpenDialogue}) {
+export default function Dialogue({ handleOpenDialogue }) {
   return (
     <Dialog
       open={open}
@@ -22,68 +20,49 @@ export default function Dialogue({handleOpenDialogue}) {
         unmount: { scale: 0.9, y: -100 },
       }}
     >
-      <DialogHeader className="p-5 md:p-10 text-[#0c2c5d] text-center font-semibold">
-        <h5>Get 20 Minutes of Our Expert's Opinion About Your Business!</h5>
-      </DialogHeader>
-      <DialogBody divider className="flex flex-col gap-5 p-5 md:p-10">
-        <Input variant="standard" label="Full Name" type="text" />
-        <Input variant="standard" label="Full Email" type="email" />
-        <Input variant="standard" label="Full Phone" type="number" />
-        <Select variant="standard" label="Select Service">
-          <Option value="Digital Marketing">Digital Marketing</Option>
-          <Option value="Digital Advertising">Digital Advertising</Option>
-          <Option value="Web Design & Development">
-            Web Design & Development
-          </Option>
-          <Option value="Search Engine Optimization">
-            Search Engine Optimization
-          </Option>
-          <Option value="Commercial Video & Photography">
-            Commercial Video & Photography
-          </Option>
-          <Option value="Social Media Marketing">Social Media Marketing</Option>
-        </Select>
-        <Textarea variant="standard" label="Eneter Message" type="text" />
+      <DialogBody className="flex flex-col gap-10 md:gap-20 p-8 md:p-16">
+        <h5 className="md:text-2xl text-[#2317A9] text-center font-semibold">
+          Get 20 Minutes of Our Expert's Opinion About Your Business!
+        </h5>
+        <div className="flex flex-col gap-5">
+          <Input variant="standard" label="Full Name" type="text" />
+          <Input variant="standard" label="Full Email" type="email" />
+          <Input variant="standard" label="Full Phone" type="number" />
+          <Select variant="standard" label="Select Service">
+            <Option value="Digital Marketing">UI/UX Design</Option>
+            <Option value="Digital Advertising">Custom Website Design</Option>
+            <Option value="Web Design & Development">
+              Single Page Application
+            </Option>
+            <Option value="Search Engine Optimization">
+              Front End Development
+            </Option>
+            <Option value="Commercial Video & Photography">
+              E Comerce Development
+            </Option>
+            <Option value="Social Media Marketing">Back End Development</Option>
+          </Select>
+          <Textarea variant="standard" label="Eneter Message" type="text" />
+        </div>
+        <div className="flex justify-end">
+          <Button
+            variant="text"
+            color="red"
+            onClick={handleOpenDialogue}
+            className="mr-1"
+            size="sm"
+          >
+            <span>Cancel</span>
+          </Button>
+          <Button
+            className="bg-gradient-to-tr hover:bg-gradient-to-tl from-[#2317A9] to-[#6C5AF6] duration-300 ease-linear"
+            onClick={handleOpenDialogue}
+            size="sm"
+          >
+            <span>Confirm</span>
+          </Button>
+        </div>
       </DialogBody>
-      <DialogFooter className="p-5 md:p-10">
-        <Button
-          variant="text"
-          color="red"
-          onClick={handleOpenDialogue}
-          className="mr-1"
-        >
-          <span>Cancel</span>
-        </Button>
-        <Button
-          className="hover:bg-[#4175FC] bg-[#0c2c5d] duration-300 ease-linear"
-          onClick={handleOpenDialogue}
-        >
-          <span>Confirm</span>
-        </Button>
-      </DialogFooter>
-      <ul className="flex justify-center gap-4 p-5 md:p-10">
-        <li>
-          <a href="https://www.facebook.com/NSRDev" target="_blank">
-            <BsFacebook className="text-[#4175FC] text-xl md:text-2xl lg:text-3xl" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/i/flow/login?redirect_after_login=%2FViserBid"
-            target="_blank"
-          >
-            <BsLinkedin className="text-[#4175FC] text-xl md:text-2xl lg:text-3xl" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/i/flow/login?redirect_after_login=%2FViserBid"
-            target="_blank"
-          >
-            <BsTwitter className="text-[#4175FC] text-xl md:text-2xl lg:text-3xl" />
-          </a>
-        </li>
-      </ul>
     </Dialog>
   );
 }

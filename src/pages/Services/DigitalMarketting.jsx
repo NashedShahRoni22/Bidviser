@@ -120,7 +120,7 @@ export default function DigitalMarketting() {
   const faqData = [
     {
       que: "What are Digital Marketing Services?",
-      ans: "Digital Marketing Services covers all the marketing and strategic efforts a company performs using the internet or electronic devices. It includes tactics such as SEO, social media marketing, email marketing, paid ads, content marketing etc.",
+      ans: "Digital Marketing Services covers all the marketing and strategic efforts a agency performs using the internet or electronic devices. It includes tactics such as SEO, social media marketing, email marketing, paid ads, content marketing etc.",
     },
     {
       que: "Can small businesses also benefit from digital marketing?",

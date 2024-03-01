@@ -3,12 +3,10 @@ import Home from "./pages/Home/Home";
 import Main from "./layout/Main";
 import DigitalMarketting from "./pages/Services/DigitalMarketting";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
-//import Contacts from "./pages/contact/Contacts";
 import Contact from "./components/HomeComponents/Contact";
 import Services from "./components/HomeComponents/Services";
 import Commingsoon from "./pages/commingSoon/Commingsoon";
 import AboutUs from "./pages/AboutUs";
-import WorkingProcess from "./components/HomeComponents/WorkingProcess";
 import Projects from "./components/HomeComponents/Projects";
 
 function App() {
@@ -34,7 +32,7 @@ function App() {
           ),
         },
         {
-          path: "/service",
+          path: "/services",
           element: <Services />,
         },
         {

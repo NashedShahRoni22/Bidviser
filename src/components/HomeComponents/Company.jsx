@@ -14,6 +14,11 @@ import img10 from "../../assets/company/icon (10).png";
 import img11 from "../../assets/company/icon (11).png";
 import img12 from "../../assets/company/icon (12).png";
 import img13 from "../../assets/company/icon (13).png";
+import img14 from "../../assets/company/icon (14).png";
+import img15 from "../../assets/company/icon (15).png";
+import img16 from "../../assets/company/icon (16).png";
+import img17 from "../../assets/company/icon (17).png";
+import img18 from "../../assets/company/icon (18).png";
 
 export default function Company() {
   const images = [
@@ -30,6 +35,19 @@ export default function Company() {
     img11,
     img12,
     img13,
+    img14,
+    img15,
+    img16,
+    img17,
+    img18,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
   ];
   return (
     <div className="py-20">
