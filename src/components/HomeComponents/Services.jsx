@@ -171,7 +171,7 @@ export default function Services() {
                 </p>
                 <button
                   onClick={() => handleOpen(s)}
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 w-fit"
                 >
                   <BsFillArrowUpRightCircleFill className="group-hover:hidden text-2xl text-[#6C5AF6] duration-300 ease-linear" />
                   <span className="hidden group-hover:block bg-[#6C5AF6] hover:bg-white hover:text-[#6C5AF6] text-white px-4 md:px-4 py-1 md:py-2 rounded-full text-sm font-thin duration-300 ease-linear">
@@ -184,8 +184,8 @@ export default function Services() {
           ))}
         </div>
 
-        <Dialog open={open} handler={handleOpen}>
-          <DialogBody className="flex flex-col gap-5 md:gap-10 md:p-8 bg-black text-white">
+        <Dialog open={open} handler={handleOpen} className="md:p-5 border-4 border-[#6C5AF6] text-black">
+          <DialogBody className="flex flex-col gap-5 md:gap-10">
             <div className="flex flex-col gap-2.5 md:gap-5 h-full justify-between">
               <h5 className="font-semibold text-xl md:text-3xl text-[#6C5AF6]">
                 {modalData?.name}
@@ -201,7 +201,7 @@ export default function Services() {
             <div className="flex justify-end">
               <Button
                 size="sm"
-                variant="text"
+                variant="filled"
                 color="red"
                 onClick={handleOpen}
                 className="mr-1"

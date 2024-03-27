@@ -6,7 +6,7 @@ import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 import Contact from "./components/HomeComponents/Contact";
 import Services from "./components/HomeComponents/Services";
 import Commingsoon from "./pages/commingSoon/Commingsoon";
-import AboutUs from "./pages/AboutUs";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Projects from "./components/HomeComponents/Projects";
 
 function App() {

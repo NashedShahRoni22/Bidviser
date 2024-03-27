@@ -24,32 +24,6 @@ export default function Header() {
     {
       name: "Services",
       link: "/services",
-      // child: [
-      //   {
-      //     name: "UI/UX Design",
-      //     link: "/commingsoon",
-      //   },
-      //   {
-      //     name: "Custom Website Development",
-      //     link: "/commingsoon",
-      //   },
-      //   {
-      //     name: "Single Page Applications (SPA)",
-      //     link: "/commingsoon",
-      //   },
-      //   {
-      //     name: "Front-End Development",
-      //     link: "/commingsoon",
-      //   },
-      //   {
-      //     name: "E-commerce Development",
-      //     link: "/commingsoon",
-      //   },
-      //   {
-      //     name: "Back-End Development",
-      //     link: "/commingsoon",
-      //   },
-      // ],
     },
     {
       name: "About Us",
